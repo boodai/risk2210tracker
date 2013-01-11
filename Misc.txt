@@ -1,0 +1,9 @@
+get players
+players select color
+setup initial board
+  Random selection of territories
+bid for turn order of year one
+begin year one
+  each player captures territories
+bid for turn order of year two
+  .....

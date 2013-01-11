@@ -347,211 +347,249 @@ window.Data = window.Data || {};
               }
             }
           }, // Austrailia
+          usPacific : {
+            name : 'US Pacific',
+            bonus : 2,
+            color : '#86c8de',
+            type : 'water',
+            territories : {
+              poseidon : {
+                name : 'Poseidon',
+                display : {
+                  css : { top: 105, left:20, width:60, height:60 }
+                }
+              },
+              hawaiianPreserve : {
+                name : 'Hawaiian Preserve',
+                display : {
+                  css : { top: 195, left:20, width:60, height:60 }
+                }
+              },
+              newAtlantis : {
+                name : 'New Atlantis',
+                display : {
+                  css : { top: 275, left:45, width:60, height:60 }
+                }
+              }
+            }
+          }, // US Pacific
+          northAtlantic : {
+            name : 'North Atlantic',
+            bonus : 2,
+            color : '#f73b30',
+            type : 'water',
+            territories : {
+              newYork : {
+                name : 'New York',
+                display : {
+                  css : { top: 220, left:215, width:60, height:60 }
+                }
+              },
+              westernIreland : {
+                name : 'Western Ireland',
+                display : {
+                  css : { top: 180, left:290, width:60, height:60 }
+                }
+              },
+              novaBrasilia : {
+                name : 'Nova Brasilia',
+                display : {
+                  css : { top: 300, left:250, width:60, height:60 }
+                }
+              }
+            }
+          }, // North Atlantic
+          southAtlantic : {
+            name : 'South Atlantic',
+            bonus : 1,
+            color : '#6abf26',
+            type : 'water',
+            territories : {
+              neoPaulo : {
+                name : 'Neo Paulo',
+                display : {
+                  css : { top: 435, left:275, width:60, height:60 }
+                }
+              },
+              theIvoryReef : {
+                name : 'The Ivory Reef',
+                display : {
+                  css : { top: 415, left:360, width:60, height:60 }
+                }
+              }
+            }
+          }, // South Atlantic
+          indian : {
+            name : 'Indian',
+            bonus : 2,
+            color : '#d45c1d',
+            type : 'water',
+            territories : {
+              southCeylon : {
+                name : 'South Ceylon',
+                display : {
+                  css : { top: 380, left:665, width:60, height:60 }
+                }
+              },
+              microcorp : {
+                name : 'Microcorp',
+                display : {
+                  css : { top: 470, left:650, width:60, height:60 }
+                }
+              },
+              akara : {
+                name : 'Akara',
+                display : {
+                  css : { top: 515, left:725, width:60, height:60 }
+                }
+              }
+            }
+          }, // Indian
+          asiaPacific : {
+            name : 'Asia Pacific',
+            bonus : 1,
+            color : '#d2d145',
+            type : 'water',
+            territories : {
+              neoTokyo : {
+                name : 'Neo Tokyo',
+                display : {
+                  css : { top: 240, left:910, width:60, height:60 }
+                }
+              },
+              sungTzu : {
+                name : 'Sung Tzu',
+                display : {
+                  css : { top: 325, left:915, width:60, height:60 }
+                }
+              }
+            }
+          } // Asia Pacific
         } // Continents
-      } // earth
+      }, // earth
+      moon : {
+        name : 'Moon',
+        display : {
+          css : {
+            width : 2048,
+            height : 1362
+          }
+        },
+        continents : {
+          cresinion : {
+            name : 'Cresinion',
+            bonus : 2,
+            color : '#b35f45',
+            type : 'space',
+            territories : {
+              bayOfDew : {
+                name : 'Bay of Dew',
+                display : {
+                  css : {}
+                }
+              },
+              harpalus : {
+                name : 'Harpalus',
+                display : {
+                  css : {}
+                }
+              },
+              seaOfRains : {
+                name : 'Sea of Rains',
+                display : {
+                  css : {}
+                }
+              },
+              oceanOfStorms : {
+                name : 'Ocean of Storms',
+                display : {
+                  css : {}
+                }
+              }
+            }
+          }, // Cresinion
+          delphot : {
+            name : 'Delphot',
+            bonus : 2,
+            color : '#6f549b',
+            type : 'space',
+            territories : {
+              aristotle : {
+                name : 'Aristotle',
+                display : {
+                  css : {}
+                }
+              },
+              seaOfSerenity : {
+                name : 'Sea of Serenity',
+                display : {
+                  css : {}
+                }
+              },
+              seaOfCrisis : {
+                name : 'Sea of Crisis',
+                display : {
+                  css : {}
+                }
+              },
+              seaOfNectar : {
+                name : 'Sea of Nectar',
+                display : {
+                  css : {}
+                }
+              }
+            }
+          }, // Cresinion
+          sajon : {
+            name : 'Sajon',
+            bonus : 4,
+            color : '#a2c988',
+            type : 'space',
+            territories : {
+              byrgius : {
+                name : 'Byrgius',
+                display : {
+                  css : {}
+                }
+              },
+              seaOfClouds : {
+                name : 'Sea of Clouds',
+                display : {
+                  css : {}
+                }
+              },
+              marshOfDiseases : {
+                name : 'Marsh of Diseases',
+                display : {
+                  css : {}
+                }
+              },
+              rhaeticus : {
+                name : 'Rhaeticus',
+                display : {
+                  css : {}
+                }
+              },
+              straitWall : {
+                name : 'Strait Wall',
+                display : {
+                  css : {}
+                }
+              },
+              tycho : {
+                name : 'Tycho',
+                display : {
+                  css : {}
+                }
+              }
+            }
+          } // Sajon
+        } // Continents
+      } // moon
     } // maps
   }; // risk2210
 
-
-
-
-
-a = {
-  randomable: 'Land',
-  boards: {
-    'Earth' : {
-
-      'Water': {
-        'US Pacific' : {
-          bonus : 2,
-          color : '#86c8de',
-          territories : {
-            'Poseidon' : {
-              id : 1001,
-              top: 105,
-              left: 20,
-              width: 60,
-              height: 60
-            },
-            'Hawaiian Preserve' : {
-              id : 1002,
-              top: 195,
-              left: 20,
-              width: 60,
-              height: 60
-            },
-            'New Atlantis' : {
-              id : 1003,
-              top: 275,
-              left: 45,
-              width: 60,
-              height: 60
-            }
-          }
-        },
-        'North Atlantic' : {
-          bonus : 2,
-          color : '#f73b30',
-          territories : {
-            'New York' : {
-              id : 1101,
-              top: 220,
-              left: 215,
-              width: 60,
-              height: 60
-            },
-            'Western Ireland' : {
-              id : 1102,
-              top: 180,
-              left: 290,
-              width: 60,
-              height: 60
-            },
-            'Nova Brasilia' : {
-              id : 1103,
-              top: 300,
-              left: 250,
-              width: 60,
-              height: 60
-            }
-          }
-        },
-        'South Atlantic' : {
-          bonus : 1,
-          color : '#6abf26',
-          territories : {
-            'Neo Paulo' : {
-              id : 1201,
-              top: 435,
-              left: 275,
-              width: 60,
-              height: 60
-            },
-            'The Ivory Reef' : {
-              id : 1202,
-              top: 415,
-              left: 360,
-              width: 60,
-              height: 60
-            }
-          }
-        },
-        'Indian' : {
-          bonus : 2,
-          color : '#d45c1d',
-          territories : {
-            'South Ceylon' : {
-              id : 1301,
-              top: 380,
-              left: 665,
-              width: 60,
-              height: 60
-            },
-            'Microcorp' : {
-              id : 1302,
-              top: 470,
-              left: 650,
-              width: 60,
-              height: 60
-            },
-            'Akara' : {
-              id : 1303,
-              top: 515,
-              left: 725,
-              width: 60,
-              height: 60
-            }
-          }
-        },
-        'Asia Pacific' : {
-          bonus : 1,
-          color : '#d2d145',
-          territories : {
-            'Neo Tokyo' : {
-              id : 1401,
-              top: 240,
-              left: 910,
-              width: 60,
-              height: 60
-            },
-            'Sung Tzu' : {
-              id : 1402,
-              top: 325,
-              left: 915,
-              width: 60,
-              height: 60
-            }
-          }
-        }
-      }
-    },
-    'Moon' : {
-      'Space': {
-        'Cresinion' : {
-          bonus : 2,
-          color : '#b35f45',
-          territories : {
-            'Bay of Dew' : {
-              id : 2001
-            },
-            'Harpalus' : {
-              id : 2002
-            },
-            'Sea of Rains' : {
-              id : 2003
-            },
-            'Ocean of Storms' : {
-              id : 2004
-            }
-          }
-        },
-        'Delphot' : {
-          bonus : 2,
-          color : '#6f549b',
-          territories : {
-            'Aristotle' : {
-              id : 2101
-            },
-            'Sea of Serenity' : {
-              id : 2102
-            },
-            'Sea of Crisis' : {
-              id : 2103
-            },
-            'Sea of Nectar' : {
-              id : 2104
-            }
-          }
-        },
-        'Sajon' : {
-          bonus : 4,
-          color : '#a2c988',
-          territories : {
-            'Byrgius' : {
-              id : 2201
-            },
-            'Sea of Clouds' : {
-              id : 2202
-            },
-            'Marsh of Diseases' : {
-              id : 2203
-            },
-            'Rhaeticus' : {
-              id : 2204
-            },
-            'Strait Wall' : {
-              id : 2205
-            },
-            'Tycho' : {
-              id : 2206
-            }
-          }
-        }
-      }
-    };
-
-gameTypes = Data.gameTypes || {};
-
-
+  gameTypes = Data.gameTypes || {};
+  gameTypes.risk2210 = risk2210;
 
 })( window.Data);

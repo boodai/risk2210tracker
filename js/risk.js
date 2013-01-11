@@ -13,6 +13,12 @@ function uuid() {
   return uuid;
 }
 
+// UTC Date
+function utc() {
+  var now = new Date();
+  return new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(),  now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
+}
+
 // Setup the app
 (function(window){
   console.log('test');
