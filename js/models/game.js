@@ -31,10 +31,20 @@ window.Collections = window.Collections || {};
     },
     removePlayer: function(player) {
       var model = this;
+      var playerId;
+
+      if( Object.toType(player) == 'object') {
+        try {
+          playerId = player.get('id');
+        } catch(err) {}
+      } else if( Object.toType(player) == 'string') {
+        playerId = player;
+      }
+
       // Check if player exists in game players collection
-      var newPlayer = model._gamePlayers.get(playerId);
-      if( newPlayer ) {
-        model._gamePlayers.remove(newPlayer);
+      var newPlayers = model._gamePlayers.where({playerId: playerId});
+      if( newPlayers[0] ) {
+        model._gamePlayers.remove(newPlayers[0]);
         return model;
       } else {
         throw 'Player not found in game.'

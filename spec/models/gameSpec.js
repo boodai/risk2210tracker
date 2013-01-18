@@ -31,22 +31,24 @@ describe("Game Model", function() {
     });
   });
 
-  describe(".addPlayer(player) - should add a player to the game", function() {
-    it("should error when player is not found", function() {
-      expect(function(){ game.addPlayer({}) } ).toThrow('Player not found.');
-      expect(function(){ game.addPlayer('123') } ).toThrow('Player not found.');
-    });
-
-    it("should add the player by id", function() {
-      game.addPlayer( player.get('id') );
-      expect(game._gamePlayers.length).toEqual(1);
-      expect(game._gamePlayers.at(0).get('playerId')).toEqual(player.get('id'));
-    });
-
-    it("should add the player by model", function() {
+  describe(".removePlayer(player) - should remove a player from the game", function() {
+    beforeEach(function() {
       game.addPlayer( player );
-      expect(game._gamePlayers.length).toEqual(1);
-      expect(game._gamePlayers.at(0).get('playerId')).toEqual(player.get('id'));
+    });
+
+    it("should error when player is not found", function() {
+      expect(function(){ game.removePlayer({}) } ).toThrow('Player not found in game.');
+      expect(function(){ game.removePlayer('123') } ).toThrow('Player not found in game.');
+    });
+
+    it("should remove the player by id", function() {
+      game.removePlayer( player.get('id') );
+      expect(game._gamePlayers.length).toEqual(0);
+    });
+
+    it("should remove the player by model", function() {
+      game.removePlayer( player );
+      expect(game._gamePlayers.length).toEqual(0);
     });
   });
 

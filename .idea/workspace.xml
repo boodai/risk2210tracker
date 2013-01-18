@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ee47731-6b6c-49de-8f36-9136c4a080e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/additional.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/models/game-player.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/models/player.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/appSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/gameSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/third-party/js/jasmine-1.3.1/MIT.LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/third-party/js/jasmine-1.3.1/demo/SpecRunner.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/third-party/js/jasmine-1.3.1/demo/spec/PlayerSpec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/third-party/js/jasmine-1.3.1/demo/spec/SpecHelper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/third-party/js/jasmine-1.3.1/demo/src/Player.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/third-party/js/jasmine-1.3.1/demo/src/Song.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/third-party/js/jasmine-1.3.1/jasmine-html.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/third-party/js/jasmine-1.3.1/jasmine.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/third-party/js/jasmine-1.3.1/jasmine.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/game.js" afterPath="$PROJECT_DIR$/js/models/game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/risk.js" afterPath="$PROJECT_DIR$/js/risk.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/risk.html" afterPath="$PROJECT_DIR$/risk.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/gameSpec.js" afterPath="$PROJECT_DIR$/spec/models/gameSpec.js" />
     </list>
     <ignored path="Risk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,15 +52,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="additional.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/additional.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="1" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="appSpec.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/appSpec.js">
               <provider selected="true" editor-type-id="text-editor">
@@ -89,7 +64,7 @@
           <file leaf-file-name="gameSpec.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/models/gameSpec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.8605042">
+                <state line="44" column="0" selection-start="1641" selection-end="1641" vertical-scroll-proportion="1.0972447">
                   <folding />
                 </state>
               </provider>
@@ -111,7 +86,7 @@
           <file leaf-file-name="game.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/models/game.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="18" selection-start="597" selection-end="597" vertical-scroll-proportion="0.42301458">
+                <state line="38" column="19" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.9675851">
                   <folding />
                 </state>
               </provider>
@@ -153,9 +128,9 @@
         <option value="$PROJECT_DIR$/js/additonals.js" />
         <option value="$PROJECT_DIR$/risk.html" />
         <option value="$PROJECT_DIR$/js/risk.js" />
-        <option value="$PROJECT_DIR$/js/models/game.js" />
         <option value="$PROJECT_DIR$/spec.html" />
         <option value="$PROJECT_DIR$/spec/appSpec.js" />
+        <option value="$PROJECT_DIR$/js/models/game.js" />
         <option value="$PROJECT_DIR$/spec/models/gameSpec.js" />
       </list>
     </option>
@@ -510,15 +485,21 @@
       <created>1357925799582</created>
       <updated>1357925799582</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adding in jasmine for spec tests. Moved useful functions to additionals.">
+      <created>1358491187510</created>
+      <updated>1358491187510</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1630" height="1028" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16224748" sideWeight="0.67083335" order="0" side_tool="false" content_ui="combo" />
@@ -526,12 +507,10 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -572,7 +551,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basics of the models" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding in jasmine for spec tests. Moved useful functions to additionals." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -591,6 +570,7 @@
     <MESSAGE value="Some SVG Testing" />
     <MESSAGE value="Moving stuff around" />
     <MESSAGE value="Basics of the models" />
+    <MESSAGE value="Adding in jasmine for spec tests. Moved useful functions to additionals." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -620,13 +600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/data/risk2210.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="14" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/third-party/js/jasmine-1.3.1/demo/SpecRunner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="159" selection-end="329" vertical-scroll-proportion="0.09392898">
@@ -648,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="30" selection-start="371" selection-end="432" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="52" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.5899441">
@@ -665,20 +631,6 @@
     <entry file="file://$PROJECT_DIR$/js/risk.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="32" selection-start="159" selection-end="185" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/additional.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="1" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="18" selection-start="597" selection-end="597" vertical-scroll-proportion="0.42301458">
           <folding />
         </state>
       </provider>
@@ -697,9 +649,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="30" selection-start="371" selection-end="432" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/additional.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="5" selection-start="292" selection-end="292" vertical-scroll-proportion="0.10690423">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/data/risk2210.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="14" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="19" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.9675851">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/gameSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.8605042">
+        <state line="44" column="0" selection-start="1641" selection-end="1641" vertical-scroll-proportion="1.0972447">
           <folding />
         </state>
       </provider>
