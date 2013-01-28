@@ -19,8 +19,9 @@
   <script type='text/javascript' src='js/models/game.js'></script>
   <script type='text/javascript' src='js/models/game-player.js'></script>
   <script type='text/javascript' src='js/models/player.js'></script>
+  <script type='text/javascript' src='js/models/data/game-type.js'></script>
   <!-- The App -->
-  <script type='text/javascript' src='js/risk.js'></script>
+  <script type='text/javascript' src='js/app.js'></script>
 
   <!--<script type='text/javascript' src='js/models/boards/board-game.js'></script>-->
   <!--&lt;!&ndash;<script type='text/javascript' src='js/models/boards/board.js'></script>&ndash;&gt;-->
@@ -39,6 +40,14 @@
   <!--<script type='text/javascript' src='js/views/boards/territory.js'></script>-->
 
   <!-- Style Sheet -->
+
+  <script type='text/javascript'>
+    // Handler for .ready() called.
+    $(function() {
+      // start the app
+      window.app.init();
+    });
+  </script>
 </head>
 
 <body>

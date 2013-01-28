@@ -5,14 +5,20 @@ window.Collections = window.Collections || {};
 
   Models.Game = Backbone.Model.extend({
     defaults: {
-      'id' : uuid(),
-      'gameTypeId' : null,
+      'id' : null,
+      'gameType' : null,
       'numYears' : null,
-      'createdAt' : new Date()
+      'createdAt' : null
     },
     //localStorage: new Store('Risk::Model::Game'),
     initialize: function(attributes, options) {
       var model = this;
+      options || (options = {});
+
+      // lets give it a nice guid id
+      model.set('id', uuid());
+      // lets set the date
+      model.set('createdAt', new Date());
 
       // load up game players collection if need be
       model._gamePlayers = new window.Collections.GamePlayers(null, { gameId : model.get('id') });
