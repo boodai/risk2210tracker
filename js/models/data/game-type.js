@@ -1,9 +1,9 @@
 window.Models = window.Models || {};
 window.Collections = window.Collections || {};
 
-(function( Backbone, Models, Collections ){
-
-  Models.GameType = Backbone.Model.extend({
+(function( Backbone, Models, Collections, window ){
+  Models.Data = Models.Data || {};
+  Models.Data.GameType = Backbone.Model.extend({
     defaults: {
       'id' : null,
       'name' : null,
@@ -12,14 +12,30 @@ window.Collections = window.Collections || {};
     },
     //localStorage: new Store(app.storeName + '::Player'),
     initialize: function(attributes, options) {
-      var model = this;
+      var model = this; options || (options = {});
+      if( !exists(options.maps) ) { throw 'Maps were not passed in options hash.'; }
+
+      model._maps = {};
+
+      // Now that we have a game, we need the maps
+      _.each(options.maps, function(map, mapKey, list) {
+        var mapModel = new Models.Data.Map({ id : mapKey,
+                                              name : map.name,
+                                              display : map.display,
+                                              gameTypeId : attributes.id }
+                                            , { parent : model, continents : map.continents });
+        window.collections.data.maps.add(mapModel);
+        // add it to the gameType
+        model._maps[mapKey] = mapModel;
+      });
     }
   });
 
-  Collections.GameTypes = Backbone.Collection.extend({
-    model: window.Models.GameType
+  Collections.Data = Collections.Data || {};
+  Collections.Data.GameTypes = Backbone.Collection.extend({
+    model: window.Models.Data.GameType
     //localStorage: new Store(app.storeName + '::Player')
   });
 
-})(Backbone, window.Models, window.Collections);
+})(Backbone, window.Models, window.Collections, window);
 

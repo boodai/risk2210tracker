@@ -29,3 +29,26 @@ function utc() {
   var now = new Date();
   return new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(),  now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
 }
+
+// Overwriting console.log
+if (typeof console !== "undefined") {
+  console.originalLog = console.log;
+  console.log = function() {
+
+    var canGroup = typeof console.groupCollapsed !== 'undefined';
+    if (canGroup) {
+      console.groupCollapsed.apply(this, arguments);
+    } else {
+      console.originalLog.apply(this, arguments);
+    }
+    if (typeof console.trace !== 'undefined') {
+      console.trace();
+    } else {
+      var stack = new Error().stack;
+      console.originalLog(stack);
+    }
+    if (canGroup) {
+      console.groupEnd();
+    }
+  };
+}

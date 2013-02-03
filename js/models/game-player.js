@@ -7,7 +7,8 @@ window.Collections = window.Collections || {};
     defaults: {
       'id' : null,
       'gameId' : null,
-      'playerId' : null
+      'playerId' : null,
+      'color' : null
     },
     //localStorage: new Store(app.storeName + '::Player'),
     initialize: function(attributes, options) {

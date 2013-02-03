@@ -1,40 +1,43 @@
-(function(window){
+window.collections = window.collections || {};
+
+(function(window, collections, Models, Collections, Data){
 
   window.app = {
     init: function() {
       // Get the collections up and running
-      window.Data = window.Data || {};
-      window.collections = window.collections || {};
-      window.collections.players = new window.Collections.Players();
-      window.collections.gameTypes = new window.Collections.GameTypes();
+      collections.players = new Collections.Players();
+      collections.data = window.collections.data || {};
+      collections.data.gameTypes = new Collections.Data.GameTypes();
+      collections.data.maps = new Collections.Data.Maps();
+      collections.data.continents = new Collections.Data.Continents();
+      collections.data.territories = new Collections.Data.Territories();
 
     },
     // Need to import the games and boards
     importData : function() { var app = this;
-      if( !exists(window.Data.gameTypes) ) {
-        throw 'No game types found.'
+      if( !exists(Data.gameTypes) ) {
+        throw 'No game types found.';
       }
 
-      app.gameTypes = {};
-      _.each(window.Data.gameTypes, function(type, key, list) {
-        app.gameTypes[key] = type.name;
+      _.each(Data.gameTypes, function(type, type_key, list) {
+        // Add gameType to collection
+        var type_model = new Models.Data.GameType({ id : type_key,
+                                                    name : type.name,
+                                                    years : type.years,
+                                                    players : type.players }
+                                                  , { maps : type.maps });
+        window.collections.data.gameTypes.add(type_model);
       });
 
-//      if( exists(window.Data.gameTypes) ) {
-//        _.each(window.Data.gameTypes, function(type, key, list) {
-//          // Create the game type
-//          window.collections.gameTypes.add({ id : type.id, name : type.name, years : type.years, players : type.players });
-//        });
-//      }
     },
     createGame : function(gameType, years) { var app = this;
 
       // make sure is a valid gameType
       console.log( Object.keys(app.gameTypes));
       if( Object.keys(app.gameTypes).lastIndexOf(gameType) < 0 ) {
-        throw 'Game type not found.'
+        throw 'Game type not found.';
       }
-      var gameData = window.Data.gameTypes[gameType];
+      var gameData = Data.gameTypes[gameType];
       //years || (years = gameData.years.default);
 
       // check the years for the game
@@ -45,10 +48,10 @@
         throw 'Years must less than ' + (gameData.years.max+1);
       }
 
-      app._currentGame = window.Models.Game({ gameType:gameType, numYears:years});
+      app._currentGame = Models.Game({ gameType:gameType, numYears:years});
     }
 
 
   }
-})( window );
+})( window, window.collections, window.Models, window.Collections, window.Data);
 
