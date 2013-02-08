@@ -16,7 +16,7 @@ describe("Model::Data::GameType", function() {
     });
 
     it("should load the maps", function() {
-      expect(Object.keys(gameType._maps).length).toEqual(2);
+      expect(gameType.maps.length).toEqual(2);
     });
   });
 

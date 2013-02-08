@@ -17,7 +17,7 @@ window.Collections = window.Collections || {};
       }
 
       var model = this;
-      model._continent = options.parent;
+      model.continent = options.parent;
     }
   });
 

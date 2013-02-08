@@ -19,8 +19,8 @@ window.Collections = window.Collections || {};
       if( !exists(options.territories) ) { throw 'Territories were not passed in options hash.'; }
       if( !exists(options.parent) ) { throw 'Parent was not passed in options hash.'; }
 
-      model._territories = {};
-      model._map = options.parent;
+      model.territories = new Collections.Data.Territories();
+      model.map = options.parent;
 
       // Now we need the territories
       _.each(options.territories, function(territory, territoryKey, list) {
@@ -31,7 +31,7 @@ window.Collections = window.Collections || {};
                                                         , { parent : model });
         window.collections.data.territories.add(territoryModel);
         // add it to the gameType
-        model._territories[territoryKey] = territoryModel;
+        model.territories.add(territoryModel);
       });
     }
   });

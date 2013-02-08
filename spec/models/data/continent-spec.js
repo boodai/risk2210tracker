@@ -22,11 +22,11 @@ describe("Model::Data::Continent", function() {
     });
 
     it("should load the continents", function() {
-      expect(Object.keys(continent._territories).length).toEqual(9);
+      expect(continent.territories.length).toEqual(9);
     });
 
     it("sets the parent", function() {
-      expect(continent._map).toEqual(1);
+      expect(continent.map).toEqual(1);
     });
   });
 

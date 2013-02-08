@@ -20,11 +20,11 @@ describe("Model::Data::Map", function() {
     });
 
     it("should load the continents", function() {
-      expect(Object.keys(map._continents).length).toEqual(11);
+      expect(map.continents.length).toEqual(11);
     });
 
     it("sets the parent", function() {
-      expect(map._gameType).toEqual(1);
+      expect(map.gameType).toEqual(1);
     });
   });
 

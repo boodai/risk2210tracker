@@ -50,8 +50,8 @@ window.Collections = window.Collections || {};
         var colors = Object.keys(model._gameType.get('players').colors);
         // make sure valid color
         if(!_.contains(colors, color)) { throw color + ' must be one of [' + colors.join() + '].' }
-        // TODO :: make sure no repeats of color
-
+        usedColors = model._gamePlayers.pluck('color');
+        if(_.contains(usedColors, color)) { throw color + ' has already been used.' }
       }
 
       // make sure not already at max players
@@ -82,11 +82,65 @@ window.Collections = window.Collections || {};
 
     },
     startGame : function() {
-      // make sure when start game that everyone has a color
-      // make sure have minimum number of players
+      var model = this;
+      // TODO : make sure have minimum number of players
+
+      // first, create the board in memory
+      model.createBoard();
+      // randomize the board for start (only land territories)
+
+      // get turn order
+
+    },
+    createBoard: function() {
+      var model = this;
+
+      model._board = {};
+
+      model._gameType.maps.each(function(map) {
+        map.continents.each(function(continent) {
+          continent.territories.each(function(territory) {
+            model._board[territory.id] = null;
+          });
+        });
+      });
     },
     // randomize board
-    randomizeBoard: function() {}
+    randomizeBoard: function() {
+      var model = this, landTerritories = [], territory;
+
+      // get all land territories
+      _.each(model._board, function(owner, key) {
+        territory = window.collections.data.territories.get(key);
+        if(territory.continent.get('type') ==  'land') {
+          landTerritories.push(key);
+        }
+      });
+
+      // randomize the array
+      fisherYates(landTerritories);
+
+      // Territories per player
+      var numEach = parseInt(landTerritories.length/model._gamePlayers.length);
+
+      model._gamePlayers.each(function(player) {
+        for(var y=0; y < numEach; y++) {
+          var terrKey =  landTerritories.pop();
+          model._board[terrKey] = player.get('playerId');
+        }
+      });
+
+      // fill up remainder
+      var remainder = landTerritories.length;
+      for(var y=0; y < remainder; y++) {
+        var terrKey =  landTerritories.pop();
+        // random player
+        var rand = Math.floor(Math.random()*(model._gamePlayers.length));
+        var player = model._gamePlayers.at(rand);
+        model._board[terrKey] = player.get('playerId');
+      }
+    }
+
     // Start new year
   });
 

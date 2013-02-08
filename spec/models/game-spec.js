@@ -41,6 +41,14 @@ describe("Model::Game", function() {
       expect(function(){ game.addPlayer(player, 'blah') } ).toThrow('blah must be one of [red,black,gold,blue,green].');
     });
 
+    it("should error when color is already used", function() {
+      var test = new window.Models.Player({ name : 'Test' });
+      window.collections.players.add(test);
+      game.addPlayer( test, 'red' );
+
+      expect(function(){ game.addPlayer(player, 'red') } ).toThrow('red has already been used.');
+    });
+
     it("should add the player by id", function() {
       game.addPlayer( player.get('id'), 'red' );
       expect(game._gamePlayers.length).toEqual(1);
@@ -55,20 +63,25 @@ describe("Model::Game", function() {
     });
 
     it("should error when trying to add more than max players", function() {
-      for(var x = 1; x<=5; x++) {
+      // setting max players to 3
+      game._gameType.get('players').max = 3;
+      _.each(['red','black','gold'], function(color) {
         var test = new window.Models.Player({ name : 'Test' });
         window.collections.players.add(test);
-        game.addPlayer( test, 'red' );
-      }
-      expect(game._gamePlayers.length).toEqual(5);
+        game.addPlayer( test, color );
+      });
+      expect(game._gamePlayers.length).toEqual(3);
       var num5 = new window.Models.Player({ name : 'Test' });
       window.collections.players.add(num5);
-      expect( function(){ game.addPlayer( num5, 'red' ) } ).toThrow('Already at max of 5 players.');
-      expect(game._gamePlayers.length).toEqual(5);
+      expect( function(){ game.addPlayer( num5, 'blue' ) } ).toThrow('Already at max of 3 players.');
+      expect(game._gamePlayers.length).toEqual(3);
+
+      // setting max players back to 5
+      game._gameType.get('players').max = 5;
     });
   });
 
-  describe(".removePlayer(player) - should remove a player from the game", function() {
+  describe(".removePlayer(player) - remove a player from the game", function() {
     beforeEach(function() {
       game.addPlayer( player , 'red');
     });
@@ -88,5 +101,35 @@ describe("Model::Game", function() {
       expect(game._gamePlayers.length).toEqual(0);
     });
   });
+
+  describe(".createBoard() - ", function() {
+    it("creates the board with the right number of territories", function() {
+      game.createBoard();
+      expect(exists(game._board)).toEqual(true);
+      expect(Object.keys(game._board).length).toEqual(70);
+    });
+  });
+
+  describe(".randomizeBoard() - ", function() {
+    beforeEach(function() {
+      game.createBoard();
+      _.each(['red','black','gold', 'blue'], function(color) {
+        var test = new window.Models.Player({ name : 'Test' + color });
+        window.collections.players.add(test);
+        game.addPlayer( test, color );
+      });
+    });
+
+    it("should randomly equally assign land territories between the players", function() {
+      game.randomizeBoard();
+
+      var numAssignedTerritories = 0;
+      _.each(game._board, function(player, key) {
+        if(player) { numAssignedTerritories++; }
+      });
+      expect(numAssignedTerritories).toEqual(42);
+    });
+  });
+
 
 });

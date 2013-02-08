@@ -2,26 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ee47731-6b6c-49de-8f36-9136c4a080e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/app-spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/data/continent-spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/data/game-type-spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/data/map-spec.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/data/territory-spec.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/appSpec.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/models/gameSpec.js" afterPath="$PROJECT_DIR$/spec/models/game-spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Misc.txt" afterPath="$PROJECT_DIR$/Misc.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/additional.js" afterPath="$PROJECT_DIR$/js/additional.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/data/continent-spec.js" afterPath="$PROJECT_DIR$/spec/models/data/continent-spec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/data/continent.js" afterPath="$PROJECT_DIR$/js/models/data/continent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/game-spec.js" afterPath="$PROJECT_DIR$/spec/models/game-spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/data/game-type-spec.js" afterPath="$PROJECT_DIR$/spec/models/data/game-type-spec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/data/game-type.js" afterPath="$PROJECT_DIR$/js/models/data/game-type.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/data/map.js" afterPath="$PROJECT_DIR$/js/models/data/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/data/territory.js" afterPath="$PROJECT_DIR$/js/models/data/territory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/game-player.js" afterPath="$PROJECT_DIR$/js/models/game-player.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/game.js" afterPath="$PROJECT_DIR$/js/models/game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec.html" afterPath="$PROJECT_DIR$/spec.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/data/map-spec.js" afterPath="$PROJECT_DIR$/spec/models/data/map-spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/data/map.js" afterPath="$PROJECT_DIR$/js/models/data/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/data/territory-spec.js" afterPath="$PROJECT_DIR$/spec/models/data/territory-spec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/data/territory.js" afterPath="$PROJECT_DIR$/js/models/data/territory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Risk.iws" />
     <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360299299007" ignored="false" />
+    <file path="/game-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360307222473" ignored="false" />
+    <file path="/Misc.txt" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360302283144" ignored="false" />
+    <file path="/game.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360306853480" ignored="false" />
+    <file path="/game-type.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360303508994" ignored="false" />
+    <file path="/game-type-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360303607954" ignored="false" />
+    <file path="/map.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360303682300" ignored="false" />
+    <file path="/continent.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360303726034" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,13 +40,13 @@
     <disable_hints />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.41941506">
+    <splitter split-orientation="horizontal" split-proportion="0.53640324">
       <split-first>
         <leaf>
           <file leaf-file-name="spec.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="48" selection-start="330" selection-end="330" vertical-scroll-proportion="-5.12">
+                <state line="8" column="48" selection-start="330" selection-end="330" vertical-scroll-proportion="-0.64">
                   <folding />
                 </state>
               </provider>
@@ -57,39 +61,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="game-spec.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="game-spec.js" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/spec/models/game-spec.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="72" column="36" selection-start="3338" selection-end="3338" vertical-scroll-proportion="0.86092716">
+                <state line="130" column="0" selection-start="5344" selection-end="5344" vertical-scroll-proportion="1.3523316">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="risk2210.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/data/risk2210.js">
+          <file leaf-file-name="additional.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/additional.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="16" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
+                <state line="55" column="12" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.0">
                   <folding>
-                    <element signature="e#1177#1384#0" expanded="false" />
-                    <element signature="e#1410#1602#0" expanded="false" />
-                    <element signature="e#1641#1850#0" expanded="false" />
-                    <element signature="e#1876#2067#0" expanded="false" />
-                    <element signature="e#2092#2283#0" expanded="false" />
-                    <element signature="e#2320#2525#0" expanded="false" />
-                    <element signature="e#2565#2772#0" expanded="false" />
-                    <element signature="e#2807#3010#0" expanded="false" />
-                    <element signature="e#3035#3227#0" expanded="false" />
-                    <element signature="e#3297#4408#0" expanded="false" />
-                    <element signature="e#4446#6220#0" expanded="false" />
-                    <element signature="e#6251#7819#0" expanded="false" />
-                    <element signature="e#7848#10777#0" expanded="false" />
-                    <element signature="e#10809#11944#0" expanded="false" />
-                    <element signature="e#11982#12863#0" expanded="false" />
-                    <element signature="e#12905#13788#0" expanded="false" />
-                    <element signature="e#13834#14487#0" expanded="false" />
-                    <element signature="e#14526#15385#0" expanded="false" />
-                    <element signature="e#15421#16061#0" expanded="false" />
+                    <element signature="n#!!doc" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -99,28 +85,28 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="41" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="game.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="game.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/models/game.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="52" column="48" selection-start="2101" selection-end="2101" vertical-scroll-proportion="1.0453808">
+                <state line="124" column="0" selection-start="4344" selection-end="4344" vertical-scroll-proportion="0.55094993">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="map.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/models/data/map.js">
+          <file leaf-file-name="territory.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/models/data/territory.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="0" selection-start="488" selection-end="585" vertical-scroll-proportion="0.0">
+                <state line="22" column="0" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="continent.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/models/data/continent.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="23" column="0" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -135,19 +121,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Misc.txt" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Misc.txt">
+          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                <state line="10" column="58" selection-start="402" selection-end="430" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="game-type.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/models/data/game-type.js">
+          <file leaf-file-name="Misc.txt" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Misc.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="0" selection-start="436" selection-end="487" vertical-scroll-proportion="0.0">
+                <state line="2" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -165,23 +151,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/appSpec.js" />
         <option value="$PROJECT_DIR$/spec/app-spec.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/js/additional.js" />
-        <option value="$PROJECT_DIR$/spec/models/data/game-type-spec.js" />
-        <option value="$PROJECT_DIR$/spec/models/data/continent-spec.js" />
-        <option value="$PROJECT_DIR$/spec/models/data/map-spec.js" />
-        <option value="$PROJECT_DIR$/spec/models/data/territory-spec.js" />
         <option value="$PROJECT_DIR$/spec.html" />
-        <option value="$PROJECT_DIR$/js/models/data/territory.js" />
         <option value="$PROJECT_DIR$/js/models/game-player.js" />
-        <option value="$PROJECT_DIR$/js/models/data/map.js" />
+        <option value="$PROJECT_DIR$/Misc.txt" />
+        <option value="$PROJECT_DIR$/js/models/data/territory.js" />
+        <option value="$PROJECT_DIR$/spec/models/data/territory-spec.js" />
         <option value="$PROJECT_DIR$/js/models/data/game-type.js" />
+        <option value="$PROJECT_DIR$/spec/models/data/game-type-spec.js" />
+        <option value="$PROJECT_DIR$/js/models/data/map.js" />
+        <option value="$PROJECT_DIR$/spec/models/data/map-spec.js" />
         <option value="$PROJECT_DIR$/js/models/data/continent.js" />
+        <option value="$PROJECT_DIR$/spec/models/data/continent-spec.js" />
+        <option value="$PROJECT_DIR$/js/additional.js" />
         <option value="$PROJECT_DIR$/js/models/game.js" />
         <option value="$PROJECT_DIR$/spec/models/game-spec.js" />
       </list>
@@ -218,6 +209,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -300,38 +292,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="old" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Risk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Risk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="old" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Risk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Risk" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -396,7 +356,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -404,9 +363,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="preferences.sourceCode.HTML" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -425,11 +384,13 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
         <COVERAGE_PATTERN ENABLED="true">
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
@@ -453,11 +414,13 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
         <COVERAGE_PATTERN ENABLED="true">
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
@@ -467,7 +430,7 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
         <option name="fileUrl" />
@@ -545,14 +508,18 @@
       <created>1359331679966</created>
       <updated>1359331679966</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Updated so that init loads up all of data models.&#10;Updated game initialize to validate initial values.&#10;Updated addPlayer to handle colors (half way).">
+      <created>1359877215711</created>
+      <updated>1359877215711</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1630" height="1028" extended-state="6" />
+    <frame x="0" y="22" width="1630" height="1028" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32848233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -605,9 +572,12 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="some app stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated so that init loads up all of data models.&#10;Updated game initialize to validate initial values.&#10;Updated addPlayer to handle colors (half way)." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -629,79 +599,57 @@
     <MESSAGE value="Adding in jasmine for spec tests. Moved useful functions to additionals." />
     <MESSAGE value="added tests for removePlayer" />
     <MESSAGE value="some app stuff" />
+    <MESSAGE value="Updated so that init loads up all of data models.&#10;Updated game initialize to validate initial values.&#10;Updated addPlayer to handle colors (half way)." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/models/player.js">
+    <entry file="file://$PROJECT_DIR$/spec/app-spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="365" selection-end="433" vertical-scroll-proportion="0.25723472">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/additional.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="23" selection-start="881" selection-end="881" vertical-scroll-proportion="0.46086955">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/data/game-type-spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="26" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/data/continent-spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1372" selection-end="1459" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="48" selection-start="330" selection-end="330" vertical-scroll-proportion="-5.12">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="41" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/data/territory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="7" selection-start="564" selection-end="564" vertical-scroll-proportion="0.2743837">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/data/continent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="9" selection-start="539" selection-end="539" vertical-scroll-proportion="0.30868167">
+        <state line="24" column="0" selection-start="1079" selection-end="1616" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Misc.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/data/territory-spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="44" selection-start="741" selection-end="741" vertical-scroll-proportion="0.3207127">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/models/data/game-type.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="436" selection-end="487" vertical-scroll-proportion="0.0">
+        <state line="17" column="47" selection-start="592" selection-end="620" vertical-scroll-proportion="0.29533115">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/data/game-type-spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="868" selection-end="868" vertical-scroll-proportion="0.36482084">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/data/map-spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="27" selection-start="1021" selection-end="1021" vertical-scroll-proportion="0.38219327">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/data/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.06948969">
           <folding />
         </state>
       </provider>
@@ -713,57 +661,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/app-spec.js">
+    <entry file="file://$PROJECT_DIR$/spec/models/data/continent-spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="1079" selection-end="1616" vertical-scroll-proportion="0.0">
+        <state line="32" column="3" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.5559175">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="58" selection-start="402" selection-end="430" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/data/territory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/data/continent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="814" selection-end="814" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/data/risk2210.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="16" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
+        <state line="13" column="14" selection-start="217" selection-end="217" vertical-scroll-proportion="-0.0032930844">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/additional.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="12" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#1177#1384#0" expanded="false" />
-            <element signature="e#1410#1602#0" expanded="false" />
-            <element signature="e#1641#1850#0" expanded="false" />
-            <element signature="e#1876#2067#0" expanded="false" />
-            <element signature="e#2092#2283#0" expanded="false" />
-            <element signature="e#2320#2525#0" expanded="false" />
-            <element signature="e#2565#2772#0" expanded="false" />
-            <element signature="e#2807#3010#0" expanded="false" />
-            <element signature="e#3035#3227#0" expanded="false" />
-            <element signature="e#3297#4408#0" expanded="false" />
-            <element signature="e#4446#6220#0" expanded="false" />
-            <element signature="e#6251#7819#0" expanded="false" />
-            <element signature="e#7848#10777#0" expanded="false" />
-            <element signature="e#10809#11944#0" expanded="false" />
-            <element signature="e#11982#12863#0" expanded="false" />
-            <element signature="e#12905#13788#0" expanded="false" />
-            <element signature="e#13834#14487#0" expanded="false" />
-            <element signature="e#14526#15385#0" expanded="false" />
-            <element signature="e#15421#16061#0" expanded="false" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/data/map.js">
+    <entry file="file://$PROJECT_DIR$/spec/models/game-spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="488" selection-end="585" vertical-scroll-proportion="0.0">
+        <state line="130" column="0" selection-start="5344" selection-end="5344" vertical-scroll-proportion="1.3523316">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/models/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="48" selection-start="2101" selection-end="2101" vertical-scroll-proportion="1.0453808">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/game-spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="36" selection-start="3338" selection-end="3338" vertical-scroll-proportion="0.86092716">
+        <state line="124" column="0" selection-start="4344" selection-end="4344" vertical-scroll-proportion="0.55094993">
           <folding />
         </state>
       </provider>

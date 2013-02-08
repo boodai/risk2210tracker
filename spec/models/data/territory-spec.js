@@ -16,7 +16,7 @@ describe("Model::Data::Territory", function() {
     });
 
     it("sets the parent", function() {
-      expect(territory._continent).toEqual(1);
+      expect(territory.continent).toEqual(1);
     });
   });
 

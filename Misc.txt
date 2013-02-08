@@ -1,5 +1,5 @@
-get players
-players select color
+get players/colors
+remove players
 setup initial board
   Random selection of territories
 bid for turn order of year one

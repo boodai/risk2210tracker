@@ -15,7 +15,7 @@ window.Collections = window.Collections || {};
       var model = this; options || (options = {});
       if( !exists(options.maps) ) { throw 'Maps were not passed in options hash.'; }
 
-      model._maps = {};
+      model.maps = new Collections.Data.Maps();
 
       // Now that we have a game, we need the maps
       _.each(options.maps, function(map, mapKey, list) {
@@ -26,7 +26,7 @@ window.Collections = window.Collections || {};
                                             , { parent : model, continents : map.continents });
         window.collections.data.maps.add(mapModel);
         // add it to the gameType
-        model._maps[mapKey] = mapModel;
+        model.maps.add(mapModel);
       });
     }
   });

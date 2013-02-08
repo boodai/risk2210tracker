@@ -52,3 +52,17 @@ if (typeof console !== "undefined") {
     }
   };
 }
+
+// randomize an array
+// http://stackoverflow.com/questions/2450954/how-to-randomize-a-javascript-array
+function fisherYates ( myArray ) {
+  var i = myArray.length, j, tempi, tempj;
+  if ( i == 0 ) return false;
+  while ( --i ) {
+    j = Math.floor( Math.random() * ( i + 1 ) );
+    tempi = myArray[i];
+    tempj = myArray[j];
+    myArray[i] = tempj;
+    myArray[j] = tempi;
+  }
+}
