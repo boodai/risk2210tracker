@@ -33,7 +33,9 @@ window.Collections = window.Collections || {};
       model.set('createdAt', new Date());
 
       // load up game players collection if need be
-      model._gamePlayers = new window.Collections.GamePlayers(null, { gameId : model.get('id') });
+      model._gamePlayers = new Collections.GamePlayers(null, { game:model });
+      // create years collection
+      model.years = new Collections.Years(null, { game:model });
     },
     // Set players
     addPlayer: function(player, color) {
@@ -59,7 +61,7 @@ window.Collections = window.Collections || {};
       if(model._gamePlayers.length >= max) { throw 'Already at max of ' + max + ' players.' }
 
       // add the player
-      model._gamePlayers.add({ gameId : model.get('id'), playerId : newPlayer.get('id'), color : color });
+      model._gamePlayers.add({ playerId : newPlayer.get('id'), color : color });
       return model;  // hopefully so we can chain
     },
     removePlayer: function(player) {
@@ -88,8 +90,11 @@ window.Collections = window.Collections || {};
       // first, create the board in memory
       model.createBoard();
       // randomize the board for start (only land territories)
-
+      model.randomizeBoard();
+      // Create year
+      model.addYear();
       // get turn order
+      // start first year, first player
 
     },
     createBoard: function() {
@@ -139,14 +144,23 @@ window.Collections = window.Collections || {};
         var player = model._gamePlayers.at(rand);
         model._board[terrKey] = player.get('playerId');
       }
-    }
-
+    },
     // Start new year
+    addYear : function() {
+      var model = this;
+
+      if(model.years.length >= model.get('numYears')) { throw 'Already played all years.' }
+
+      model.years.add({ gameId : model.get('id'), number : model.years.length+1 });
+    },
+    setPlayerOrderForYear : function(year, players) {
+      year.set('playerOrder',players);
+    }
   });
 
   Collections.Games = Backbone.Collection.extend({
-    model: window.Models.Game,
-    localStorage: new Backbone.LocalStorage('Risk::Model::Game')
+    model: window.Models.Game
+    //localStorage: new Backbone.LocalStorage('Risk::Model::Game')
   });
 
 

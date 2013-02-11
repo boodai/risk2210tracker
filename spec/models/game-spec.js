@@ -1,10 +1,8 @@
 describe("Model::Game", function() {
-  var game, player;
+  var game, player, playerOrder;
 
   beforeEach(function() {
     game = new window.Models.Game({ gameTypeId : 'risk2210', numYears : 5 });
-    player = new window.Models.Player({ name : 'Cory' });
-    window.collections.players.add(player);
   });
 
   describe("initialize() - setup the model", function() {
@@ -28,9 +26,20 @@ describe("Model::Game", function() {
       expect( exists(game._gamePlayers) ).toEqual(true);
       expect( game._gamePlayers ).toEqual(jasmine.any(Object));
     });
+
+    it("should create the years collection", function() {
+      expect( exists(game.years) ).toEqual(true);
+      expect( game.years ).toEqual(jasmine.any(Object));
+    });
+
   });
 
   describe(".addPlayer(player, color) - add a player to the game", function() {
+    beforeEach(function() {
+      player = new window.Models.Player({ name : 'Cory' });
+      window.collections.players.add(player);
+    });
+
     it("should error when player is not found", function() {
       expect(function(){ game.addPlayer({}) } ).toThrow('Player not found.');
       expect(function(){ game.addPlayer('123') } ).toThrow('Player not found.');
@@ -83,6 +92,9 @@ describe("Model::Game", function() {
 
   describe(".removePlayer(player) - remove a player from the game", function() {
     beforeEach(function() {
+      player = new window.Models.Player({ name : 'Cory' });
+      window.collections.players.add(player);
+
       game.addPlayer( player , 'red');
     });
 
@@ -128,6 +140,55 @@ describe("Model::Game", function() {
         if(player) { numAssignedTerritories++; }
       });
       expect(numAssignedTerritories).toEqual(42);
+    });
+  });
+
+  describe(".newYear() - ", function() {
+    it("should error when all years played", function() {
+      var bad_game = new window.Models.Game({ gameTypeId : 'risk2210', numYears : 2 });
+      bad_game.addYear();
+      bad_game.addYear();
+
+      expect(function() { bad_game.addYear() }).toThrow('Already played all years.');
+    });
+
+    it("adds a year", function() {
+      game.addYear();
+      expect(game.years.length).toEqual(1);
+    });
+  });
+
+  describe(".setPlayerOrderForYear(year, players) - ", function() {
+    beforeEach(function() {
+      game = new window.Models.Game({ gameTypeId : 'risk2210', numYears : 5 });
+      game.addYear();
+      playerOrder = [];
+
+      // add some players
+      _.each(['red','black','gold'], function(color) {
+        var test = new window.Models.Player({ name : 'Test' + color });
+        window.collections.players.add(test);
+        game.addPlayer( test, color );
+        playerOrder.push(test.get('id'));
+      });
+
+    });
+
+    it("should error no year passed", function() {
+      // TODO
+    });
+
+    it("should error no players passed", function() {
+      // TODO
+    });
+
+    it("should error players array is invalid", function() {
+      // TODO
+    });
+
+    it("should update the player order for the year", function() {
+      game.setPlayerOrderForYear(game.years.at(0), playerOrder);
+      expect(game.years.at(0).get('playerOrder')).toEqual(playerOrder);
     });
   });
 

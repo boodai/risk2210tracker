@@ -3,12 +3,12 @@ window.Collections = window.Collections || {};
 
 (function( Backbone, Models, Collections ){
 
-  Models.GamePlayer = Backbone.Model.extend({
+  Models.Year = Backbone.Model.extend({
     defaults: {
       'id' : null,
       'gameId' : null,
-      'playerId' : null,
-      'color' : null
+      'number' : null,
+      'playerOrder' : []
     },
     //localStorage: new Store(app.storeName + '::Player'),
     initialize: function(attributes, options) {
@@ -18,12 +18,11 @@ window.Collections = window.Collections || {};
     }
   });
 
-  Collections.GamePlayers = Backbone.Collection.extend({
-    model: window.Models.GamePlayer,
+  Collections.Years = Backbone.Collection.extend({
+    model: window.Models.Year,
     initialize: function(models, options) {
       options || (options = {});
       if (options.game) {
-        // add route to game
         this.game = options.game;
       } else { this.game = null; }
       // setup events

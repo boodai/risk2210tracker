@@ -7,3 +7,5 @@ begin year one
   each player captures territories
 bid for turn order of year two
   .....
+
+
