@@ -12,9 +12,12 @@ window.Collections = window.Collections || {};
     },
     //localStorage: new Store(app.storeName + '::Player'),
     initialize: function(attributes, options) {
-      var model = this;
+      var year = this;
       // lets give it a nice guid id
-      model.set('id', uuid());
+      year.set('id', uuid());
+
+      // create turns collection
+      year.turns = new Collections.Turns(null, { year:year });
     }
   });
 
@@ -27,9 +30,14 @@ window.Collections = window.Collections || {};
       } else { this.game = null; }
       // setup events
       this.on("add", function(model, collection, options) {
+
+        // TODO : either check to make sure that game is passed in or dont do this if its null
         model.game = collection.game;
         model.set('gameId', collection.game.get('id'));
       });
+    },
+    comparator : function(year) {
+      return year.get("number");
     }
     //localStorage: new Store(app.storeName + '::Player')
   });

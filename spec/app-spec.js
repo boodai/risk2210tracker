@@ -2,6 +2,7 @@ describe("The App", function() {
 
   beforeEach(function() {
     window.app.init();
+
   });
 
   describe(".init() - should setup the app", function() {
@@ -36,19 +37,19 @@ describe("The App", function() {
 
   });
 
-//  describe(".createGame() - creates the current game for the app", function() {
+  describe(".createGame() - creates the current game", function() {
 //    it("should error when game type is not found", function() {
 //      spyOn(window.app, 'gameTypes').andReturn({});
 //      expect(function(){ window.app.createGame('blah', 7) } ).toThrow('Game type not found.');
 //    });
 //
-//    it("should error when years is less than gameType allows", function() {
-//      expect(function(){ window.app.createGame('risk2210', 0) } ).toThrow('Years must at least be 2');
-//    });
-//
-//    it("should error when years is more than gameType allows", function() {
-//      expect(function(){ window.app.createGame('risk2210', 101) } ).toThrow('Years must less than 100');
-//    });
+////    it("should error when years is less than gameType allows", function() {
+////      expect(function(){ window.app.createGame('risk2210', 0) } ).toThrow('Years must at least be 2');
+////    });
+////
+////    it("should error when years is more than gameType allows", function() {
+////      expect(function(){ window.app.createGame('risk2210', 101) } ).toThrow('Years must less than 100');
+////    });
 //
 ////    it("should default the years", function() {
 ////      window.app.createGame('risk2210');
@@ -57,9 +58,9 @@ describe("The App", function() {
 //
 //
 //    it("should create the current game", function() {
-////      window.app.importData({});
-////      expect( Object.keys(window.app.gameTypes).length).toEqual(1);
+//      window.app.importData({});
+//      expect( Object.keys(window.app.gameTypes).length).toEqual(1);
 //    });
-//
-//  });
+
+  });
 });

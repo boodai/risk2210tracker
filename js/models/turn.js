@@ -12,9 +12,9 @@ window.Collections = window.Collections || {};
     },
     //localStorage: new Store(app.storeName + '::Player'),
     initialize: function(attributes, options) {
-      var model = this;
+      var turn = this;
       // lets give it a nice guid id
-      model.set('id', uuid());
+      turn.set('id', uuid());
     }
   });
 
@@ -30,7 +30,11 @@ window.Collections = window.Collections || {};
         model.year = collection.year;
         model.set('yearId', collection.year.get('id'));
       });
+    },
+    comparator : function(turn) {
+      return turn.get("number");
     }
+
     //localStorage: new Store(app.storeName + '::Player')
   });
 

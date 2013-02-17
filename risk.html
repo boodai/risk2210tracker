@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Boodai's Risk</title>
+
   <!-- Third Party Stuff -->
   <script type='text/javascript' src='third-party/js/jquery-1.8.3/jquery-1.8.3.min.js'></script>
   <script type="text/javascript" src='third-party/js/underscore-1.4.3/underscore-min.js'></script>
@@ -17,33 +18,35 @@
   <!-- Backbone Routers -->
   <!-- Backbone Models -->
   <script type='text/javascript' src='js/models/game.js'></script>
+  <script type='text/javascript' src='js/models/year.js'></script>
+  <script type='text/javascript' src='js/models/turn.js'></script>
+  <script type='text/javascript' src='js/models/action.js'></script>
   <script type='text/javascript' src='js/models/game-player.js'></script>
   <script type='text/javascript' src='js/models/player.js'></script>
   <script type='text/javascript' src='js/models/data/game-type.js'></script>
+  <script type='text/javascript' src='js/models/data/map.js'></script>
+  <script type='text/javascript' src='js/models/data/continent.js'></script>
+  <script type='text/javascript' src='js/models/data/territory.js'></script>
+
+  <!-- Backbone Views -->
+  <script type='text/javascript' src='js/views/start.js'></script>
+  <script type='text/javascript' src='js/views/game-setup.js'></script>
+
   <!-- The App -->
   <script type='text/javascript' src='js/app.js'></script>
-
-  <!--<script type='text/javascript' src='js/models/boards/board-game.js'></script>-->
-  <!--&lt;!&ndash;<script type='text/javascript' src='js/models/boards/board.js'></script>&ndash;&gt;-->
-  <!--<script type='text/javascript' src='js/models/boards/colony.js'></script>-->
-  <!--<script type='text/javascript' src='js/models/boards/territory.js'></script>-->
-  <!--<script type='text/javascript' src='js/models/year.js'></script>-->
-  <!--<script type='text/javascript' src='js/models/turn.js'></script>-->
-  <!--<script type='text/javascript' src='js/models/player.js'></script>-->
-  <!--&lt;!&ndash; Backbone Views &ndash;&gt;-->
-  <!--<script type='text/javascript' src='js/views/start.js'></script>-->
-  <!--<script type='text/javascript' src='js/views/track/options.js'></script>-->
-  <!--<script type='text/javascript' src='js/views/track/player.js'></script>-->
-  <!--<script type='text/javascript' src='js/views/track/year.js'></script>-->
-  <!--<script type='text/javascript' src='js/views/boards/board.js'></script>-->
-  <!--<script type='text/javascript' src='js/views/boards/colony.js'></script>-->
-  <!--<script type='text/javascript' src='js/views/boards/territory.js'></script>-->
 
   <!-- Style Sheet -->
 
   <script type='text/javascript'>
     // Handler for .ready() called.
     $(function() {
+
+      // find all templates and load them into the JST object ( so do not have to rerun template)
+      window.JST = {};
+      $('.template').each( function(index,element) {
+        window.JST[$(element).attr('id')] = _.template($(element).html());
+      });
+
       // start the app
       window.app.init();
     });
@@ -51,7 +54,25 @@
 </head>
 
 <body>
+  <div class="app"></div>
 
+  <!-- Templates -->
+  <script type="text/template" id="start" class="template">
+    <h1>Risk Tracker</h1>
+    <button class="btn" data-type="track">Track New Game</button>
 
+  </script>
+
+  <script type="text/template" id="game-setup" class="template">
+    <h1>2210</h1>
+    years : 5 (need dropdown here)
+    <br>
+    players<br>
+    <hr>
+    here would be where you would add players, select thier colors, etc
+    <br>
+    <button class="btn">Start Game</button>
+
+  </script>
 </body>
 </html>

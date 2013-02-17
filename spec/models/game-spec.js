@@ -192,5 +192,37 @@ describe("Model::Game", function() {
     });
   });
 
+  describe(".addTurn() - ", function() {
+    beforeEach(function() {
+      var playerOrder = [];
+
+      // add players to the game
+      _.each(['red','black','gold'], function(color) {
+        var test = new window.Models.Player({ name : 'Test' });
+        window.collections.players.add(test);
+        game.addPlayer( test, color );
+        playerOrder.push(test.get('id'));
+      });
+
+      // add a year
+      game.addYear();
+      // Set player order
+      game.setPlayerOrderForYear(game.years.at(0), playerOrder);
+
+    });
+
+    it("should error when all turns played", function() {
+      // TODO
+
+      //expect(function() { bad_game.addTurn() }).toThrow('All turns played for year.');
+    });
+
+    it("adds a turn", function() {
+      game.addTurn();
+      game.addTurn();
+      expect(game.years.first().turns.length).toEqual(2);
+    });
+  });
+
 
 });
