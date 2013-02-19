@@ -104,12 +104,12 @@ window.Collections = window.Collections || {};
     createBoard: function() {
       var game = this;
 
-      game._board = {};
+      game.board = {};
 
       game.gameType.maps.each(function(map) {
         map.continents.each(function(continent) {
           continent.territories.each(function(territory) {
-            game._board[territory.id] = null;
+            game.board[territory.id] = null;
           });
         });
       });
@@ -119,7 +119,7 @@ window.Collections = window.Collections || {};
       var game = this, landTerritories = [], territory;
 
       // get all land territories
-      _.each(game._board, function(owner, key) {
+      _.each(game.board, function(owner, key) {
         territory = window.collections.data.territories.get(key);
         if(territory.continent.get('type') ==  'land') {
           landTerritories.push(key);
@@ -135,7 +135,7 @@ window.Collections = window.Collections || {};
       game.gamePlayers.each(function(player) {
         for(var y=0; y < numEach; y++) {
           var terrKey =  landTerritories.pop();
-          game._board[terrKey] = player.get('playerId');
+          game.board[terrKey] = player.get('playerId');
         }
       });
 
@@ -146,7 +146,7 @@ window.Collections = window.Collections || {};
         // random player
         var rand = Math.floor(Math.random()*(game.gamePlayers.length));
         var player = game.gamePlayers.at(rand);
-        game._board[terrKey] = player.get('playerId');
+        game.board[terrKey] = player.get('playerId');
       }
     },
     addYear : function() {
@@ -181,6 +181,11 @@ window.Collections = window.Collections || {};
       year.turns.add({ number : turnNumber, playerId : playerId });
 
       return game;
+    },
+    addAction : function(territoryId, playerId) { var game = this;
+      var actions = game.years.last().turns.last().actions;
+      actions.add({ territoryId : territoryId, playerId : playerId, number : actions.length+1 });
+      game.board[territoryId] = playerId;
     }
   });
 

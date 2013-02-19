@@ -21,17 +21,20 @@ window.JST = window.JST || {};
       view.maps = [];
     },
     render: function() { var view = this;
+      var player = view.model.years.last().turns.last().player();
+      console.log(player.id);
+      var gamePlayer = view.model.gamePlayers.where({ playerId : player.id })[0];
       // need the maps
       // just sending earth for now
       var earth = view.model.gameType.maps.first();
-      view.maps.push(new Views.Map({ model : earth }));
+      view.maps.push(new Views.Map({ model : earth, gamePlayer : gamePlayer, game : view.model }));
 
       // need the stats
 
       // dunno what else we need
 
       var data = {
-        player : view.model.years.last().turns.last().player().get('name')
+        player : player.get('name')
       };
 
       // TODO  fix this stupidity so specs work better

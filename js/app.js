@@ -99,6 +99,9 @@ window.Views = window.Views || {};
       // display the map
       app.turnView();
     },
+    newAction :  function(territoryId, playerId) { var app = this;
+      app._currentGame.addAction(territoryId, playerId);
+    },
     endTurn : function() { var app = this;
       // check if turns all used up this year
       if(app._currentGame.years.last().turns.last().get('number') == app._currentGame.gamePlayers.length) {

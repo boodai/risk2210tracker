@@ -13,9 +13,11 @@ window.JST = window.JST || {};
 //      'click .btn' : 'endTurn'
     },
     initialize: function(options) {
+      console.log(options);
       var view = this;
       options = options || {};
-//      view._parent = options.parent || null;
+      view.game = options.game || null;
+      view.gamePlayer = options.gamePlayer || null;
       view._template = window.JST['map'];
     },
     render: function() { var view = this;
@@ -32,20 +34,42 @@ window.JST = window.JST || {};
         view.$el.html(view._template());
       }
 
-      window.cory = view.el;
       var paper = Raphael(view.el, view.model.get('display').svg.width, view.model.get('display').svg.height);
 
       view.model.continents.each(function(continent) {
         continent.territories.each(function(territory) {
           if( exists(territory.get('display').svg) ) {
             var item = paper.path(territory.get('display').svg);
-            item.attr("fill", continent.get('color'));
+            item.attr({ stroke : continent.get('color'), cursor : 'pointer', 'stroke-width' : 3 });
+            view.labelPath(paper, item, territory.get('name'));
+            if(view.game.board[territory.id] != null) {
+              // already owned
+              item.attr({ fill : view.game.gamePlayers.where({playerId : view.game.board[territory.id]})[0].get('color')  });
+            } else {
+              item.attr({ fill : '#FFFFFF' });
+            }
+
+            item.data('id', territory.id);
+            item.click(function() {
+              // Fill with characters color
+              this.attr("fill", view.gamePlayer.get('color'));
+              // add action
+              window.app.newAction(territory.id, view.gamePlayer.get('playerId'));
+            });
           }
         });
       });
 
 
       return view;
+    },
+    labelPath : function(paper, pathObj, text, textattr ) { var view = this;
+      if ( textattr == undefined )
+        textattr = { 'font-size': 20, fill: '#000', stroke: 'none', 'font-family': 'Arial,Helvetica,sans-serif', 'font-weight': 400 };
+      var bbox = pathObj.getBBox();
+      console.log(bbox);
+      var textObj = paper.text( bbox.x + bbox.width / 2, bbox.y + bbox.height / 2, text ); //.attr( textattr );
+      return textObj;
     },
     selectTerritory : function() {
     }

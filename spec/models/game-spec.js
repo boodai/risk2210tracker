@@ -131,8 +131,8 @@ describe("Model::Game", function() {
   describe(".createBoard() - ", function() {
     it("creates the board with the right number of territories", function() {
       game.createBoard();
-      expect(exists(game._board)).toEqual(true);
-      expect(Object.keys(game._board).length).toEqual(70);
+      expect(exists(game.board)).toEqual(true);
+      expect(Object.keys(game.board).length).toEqual(69);
     });
   });
 
@@ -150,7 +150,7 @@ describe("Model::Game", function() {
       game.randomizeBoard();
 
       var numAssignedTerritories = 0;
-      _.each(game._board, function(player, key) {
+      _.each(game.board, function(player, key) {
         if(player) { numAssignedTerritories++; }
       });
       expect(numAssignedTerritories).toEqual(42);

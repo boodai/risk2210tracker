@@ -15,6 +15,10 @@ window.Collections = window.Collections || {};
       var turn = this;
       // lets give it a nice guid id
       turn.set('id', uuid());
+
+      // create actions collection
+      turn.actions = new Collections.Actions(null, { turn:turn });
+
     },
     player : function() { var turn = this;
       return window.collections.players.get(turn.get('playerId'));
