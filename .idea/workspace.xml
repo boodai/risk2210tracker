@@ -2,23 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ee47731-6b6c-49de-8f36-9136c4a080e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/game-spec.js" afterPath="$PROJECT_DIR$/spec/models/game-spec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/game.js" afterPath="$PROJECT_DIR$/js/models/game.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/map.js" afterPath="$PROJECT_DIR$/js/views/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/turn.js" afterPath="$PROJECT_DIR$/js/models/turn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/turn.js" afterPath="$PROJECT_DIR$/js/views/turn.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Risk.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361255161534" ignored="false" />
+    <file path="/Dummy.txt" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361259298561" ignored="false" />
     <file path="/game-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361220738686" ignored="false" />
     <file path="/Misc.txt" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360302283144" ignored="false" />
     <file path="/game.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361257154578" ignored="false" />
     <file path="/game-type.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360303508994" ignored="false" />
     <file path="/game-type-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360303607954" ignored="false" />
-    <file path="/map.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361259104870" ignored="false" />
+    <file path="/map.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361259582456" ignored="false" />
     <file path="/continent.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360303726034" ignored="false" />
     <file path="/year.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361067807860" ignored="false" />
     <file path="/spec.html" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361239097835" ignored="false" />
@@ -60,7 +55,7 @@
           <file leaf-file-name="map.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/views/map.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="70" column="90" selection-start="2448" selection-end="2448" vertical-scroll-proportion="1.2524753">
+                <state line="62" column="0" selection-start="2023" selection-end="2023" vertical-scroll-proportion="1.0412542">
                   <folding />
                 </state>
               </provider>
@@ -522,7 +517,11 @@
       <created>1361255166405</created>
       <updated>1361255166405</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Got territories highlighting">
+      <created>1361259301091</created>
+      <updated>1361259301091</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -607,7 +606,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated third party items&#10;added views and whatnot that all need specs&#10;Can now click through app somewhat." />
+    <option name="LAST_COMMIT_MESSAGE" value="Got territories highlighting" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -634,6 +633,7 @@
     <MESSAGE value="Year stuff" />
     <MESSAGE value="Bunch of stuff" />
     <MESSAGE value="Updated third party items&#10;added views and whatnot that all need specs&#10;Can now click through app somewhat." />
+    <MESSAGE value="Got territories highlighting" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -750,7 +750,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/views/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="90" selection-start="2448" selection-end="2448" vertical-scroll-proportion="1.2524753">
+        <state line="62" column="0" selection-start="2023" selection-end="2023" vertical-scroll-proportion="1.0412542">
           <folding />
         </state>
       </provider>

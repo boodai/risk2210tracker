@@ -67,9 +67,11 @@ window.JST = window.JST || {};
       if ( textattr == undefined )
         textattr = { 'font-size': 20, fill: '#000', stroke: 'none', 'font-family': 'Arial,Helvetica,sans-serif', 'font-weight': 400 };
       var bbox = pathObj.getBBox();
-      console.log(bbox);
-      var textObj = paper.text( bbox.x + bbox.width / 2, bbox.y + bbox.height / 2, text ); //.attr( textattr );
-      return textObj;
+      paper.rect( bbox.x,  bbox.y,  bbox.width,  bbox.height);
+      paper.text( bbox.x , bbox.y , 'woot' );
+//      console.log(bbox);
+//      var textObj = paper.text( bbox.x , bbox.y , text ); //.attr( textattr );
+//      return textObj;
     },
     selectTerritory : function() {
     }
