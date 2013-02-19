@@ -31,27 +31,27 @@ function utc() {
 }
 
 // Overwriting console.log
-if (typeof console !== "undefined") {
-  console.originalLog = console.log;
-  console.log = function() {
-
-    var canGroup = typeof console.groupCollapsed !== 'undefined';
-    if (canGroup) {
-      console.groupCollapsed.apply(this, arguments);
-    } else {
-      console.originalLog.apply(this, arguments);
-    }
-    if (typeof console.trace !== 'undefined') {
-      console.trace();
-    } else {
-      var stack = new Error().stack;
-      console.originalLog(stack);
-    }
-    if (canGroup) {
-      console.groupEnd();
-    }
-  };
-}
+//if (typeof console !== "undefined") {
+//  console.originalLog = console.log;
+//  console.log = function() {
+//
+//    var canGroup = typeof console.groupCollapsed !== 'undefined';
+//    if (canGroup) {
+//      console.groupCollapsed.apply(this, arguments);
+//    } else {
+//      console.originalLog.apply(this, arguments);
+//    }
+//    if (typeof console.trace !== 'undefined') {
+//      console.trace();
+//    } else {
+//      var stack = new Error().stack;
+//      console.originalLog(stack);
+//    }
+//    if (canGroup) {
+//      console.groupEnd();
+//    }
+//  };
+//}
 
 // randomize an array
 // http://stackoverflow.com/questions/2450954/how-to-randomize-a-javascript-array
@@ -66,3 +66,9 @@ function fisherYates ( myArray ) {
     myArray[j] = tempi;
   }
 }
+
+// Set underscore to us <@  @> for interpolation instead of ruby (<% %>)
+_.templateSettings = {
+  interpolate: /\<\@\=(.+?)\@\>/gim,
+  evaluate: /\<\@(.+?)\@\>/gim
+};

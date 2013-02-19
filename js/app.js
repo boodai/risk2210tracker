@@ -12,17 +12,24 @@ window.Views = window.Views || {};
 
       // Get the collections up and running
       collections.players = new Collections.Players();
-      collections.data = window.collections.data || {};
-      collections.data.gameTypes = new Collections.Data.GameTypes();
-      collections.data.maps = new Collections.Data.Maps();
-      collections.data.continents = new Collections.Data.Continents();
-      collections.data.territories = new Collections.Data.Territories();
+
+      // setup current game variable
+      app._currentGame = null;
+
+      app.importData();
 
       app.homeView();
     },
     // Need to import the games and boards
     importData : function() { var app = this;
       console.info('app::importData');
+
+      // clear out old stuff and setup collections
+      collections.data = {};
+      collections.data.gameTypes = new Collections.Data.GameTypes();
+      collections.data.maps = new Collections.Data.Maps();
+      collections.data.continents = new Collections.Data.Continents();
+      collections.data.territories = new Collections.Data.Territories();
 
       if( !exists(Data.gameTypes) ) {
         throw 'No game types found.';
@@ -35,33 +42,84 @@ window.Views = window.Views || {};
                                                     years : type.years,
                                                     players : type.players }
                                                   , { maps : type.maps });
-        window.collections.data.gameTypes.add(type_model);
+        collections.data.gameTypes.add(type_model);
       });
 
     },
-    createGame : function(gameType) { var app = this;
+    createGame : function(gameTypeId) { var app = this;
       console.info('app::createGame');
 
-
       // make sure is a valid gameType
-      console.log( Object.keys(app.gameTypes));
-      if( Object.keys(app.gameTypes).lastIndexOf(gameType) < 0 ) {
+      if( !(gameType = collections.data.gameTypes.get(gameTypeId)) ) {
         throw 'Game type not found.';
       }
-      //var gameData = Data.gameTypes[gameType];
+      app._currentGame = new Models.Game({ gameTypeId:gameTypeId});
 
-      //years || (years = gameData.years.default);
-
-      // check the years for the game
-//      if(parseInt(years) < gameData.years.min) {
-//        throw 'Years must at least be ' + gameData.years.min;
-//      }
-//      if(parseInt(years) > gameData.years.max) {
-//        throw 'Years must less than ' + (gameData.years.max+1);
-//      }
-
-      app._currentGame = Models.Game({ gameType:gameType, numYears:years});
+      // show setup View
+      app.gameSetupView();
     },
+    startGame : function(data) { var app = this;
+      // update years
+      app._currentGame.setYears(data.years);
+
+      // TODO update game with info from screen
+
+      // cheating by adding some players quickly
+      var players = {
+        'Cory' : 'red',
+        'Nick' : 'green',
+        'Derek' : 'gold'
+      };
+      _.each(players, function(color, name) {
+        var test = new window.Models.Player({ name : name });
+        window.collections.players.add(test);
+        app._currentGame.addPlayer( test, color );
+      });
+
+      // start the game up
+      app._currentGame.setupBoard();
+      app.newYear();
+    },
+    newYear : function() { var app = this;
+      // add a year to the game
+      app._currentGame.addYear();
+
+      // display turn order screen
+      app.turnOrderView();
+    },
+    updateYear : function(data) { var app = this;
+      // set the player order
+      app._currentGame.setPlayerOrderForYear(app._currentGame.years.last(), data.order);
+      // start a turn
+      app.newTurn();
+    },
+    newTurn : function() { var app = this;
+      // add a turn to the year
+      app._currentGame.addTurn();
+      // display the map
+      app.turnView();
+    },
+    endTurn : function() { var app = this;
+      // check if turns all used up this year
+      if(app._currentGame.years.last().turns.last().get('number') == app._currentGame.gamePlayers.length) {
+        if(app._currentGame.years.last().get('number') == app._currentGame.get('numYears')) {
+          // end of game
+          app.endGame();
+        } else {
+          // needs new year
+          app.newYear();
+        }
+      } else {
+        app.newTurn();
+      }
+      // if last turn, check years
+      // if last year, end game
+    },
+    endGame : function() {
+      // TODO end game stuff
+      app.endGameView();
+    },
+    // TODO move these into a better place...
     homeView : function () {
       console.info('app::homeView');
 
@@ -71,7 +129,25 @@ window.Views = window.Views || {};
     gameSetupView : function () {
       console.info('app::gameSetupView');
 
-      this.view = new Views.GameSetup();
+      this.view = new Views.GameSetup({ model : app._currentGame });
+      $('.app').html(this.view.render().el);
+    },
+    turnOrderView : function () {
+      console.info('app::turnOrderView');
+
+      this.view = new Views.TurnOrder({ model : app._currentGame });
+      $('.app').html(this.view.render().el);
+    },
+    turnView : function () {
+      console.info('app::turnView');
+
+      this.view = new Views.Turn({ model : app._currentGame });
+      $('.app').html(this.view.render().el);
+    },
+    endGameView : function () {
+      console.info('app::endGameView');
+
+      this.view = new Views.EndGame({ model : app._currentGame });
       $('.app').html(this.view.render().el);
     }
 

@@ -15,6 +15,9 @@ window.Collections = window.Collections || {};
       var turn = this;
       // lets give it a nice guid id
       turn.set('id', uuid());
+    },
+    player : function() { var turn = this;
+      return window.collections.players.get(turn.get('playerId'));
     }
   });
 

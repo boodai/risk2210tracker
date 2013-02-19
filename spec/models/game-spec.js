@@ -6,30 +6,44 @@ describe("Model::Game", function() {
   });
 
   describe("initialize() - setup the model", function() {
-    it("should require the gameType and numYears", function() {
+    it("should require the gameType", function() {
       expect(function(){ new window.Models.Game() } ).toThrow('gameTypeId is required.');
-      expect(function(){ new window.Models.Game({ gameTypeId : 'blah' }) } ).toThrow('numYears is required.');
     });
 
-    it("should validate the gameType and numYears", function() {
+    it("should validate the gameType", function() {
       expect(function(){ new window.Models.Game({ gameTypeId : 'blah', numYears : 5 }) } ).toThrow('Game type not found.');
-      expect(function(){ new window.Models.Game({ gameTypeId : 'risk2210', numYears : 0 }) } ).toThrow('0 must be between 2 and 99');
-      expect(function(){ new window.Models.Game({ gameTypeId : 'risk2210', numYears : 100 }) } ).toThrow('100 must be between 2 and 99');
+    });
+
+    it("should default numYears", function() {
+      // TODO
     });
 
     it("should link to the gameType data model", function() {
-      expect( exists(game._gameType) ).toEqual(true);
-      expect( game._gameType ).toEqual(jasmine.any(Object));
+      expect( exists(game.gameType) ).toEqual(true);
+      expect( game.gameType ).toEqual(jasmine.any(Object));
     });
 
     it("should create the gamePlayers collection", function() {
-      expect( exists(game._gamePlayers) ).toEqual(true);
-      expect( game._gamePlayers ).toEqual(jasmine.any(Object));
+      expect( exists(game.gamePlayers) ).toEqual(true);
+      expect( game.gamePlayers ).toEqual(jasmine.any(Object));
     });
 
     it("should create the years collection", function() {
       expect( exists(game.years) ).toEqual(true);
       expect( game.years ).toEqual(jasmine.any(Object));
+    });
+
+  });
+
+  describe("setYears() - setup the years for the game", function() {
+    it("should validate the years", function() {
+      expect(function(){ game.setYears(0) } ).toThrow('0 must be between 2 and 99');
+      expect(function(){ game.setYears(100) } ).toThrow('100 must be between 2 and 99');
+    });
+
+    it("should set the years", function() {
+      game.setYears(10);
+      expect( game.get('numYears') ).toEqual(10);
     });
 
   });
@@ -60,33 +74,33 @@ describe("Model::Game", function() {
 
     it("should add the player by id", function() {
       game.addPlayer( player.get('id'), 'red' );
-      expect(game._gamePlayers.length).toEqual(1);
-      expect(game._gamePlayers.at(0).get('playerId')).toEqual(player.get('id'));
-      expect(game._gamePlayers.at(0).get('color')).toEqual('red');
+      expect(game.gamePlayers.length).toEqual(1);
+      expect(game.gamePlayers.at(0).get('playerId')).toEqual(player.get('id'));
+      expect(game.gamePlayers.at(0).get('color')).toEqual('red');
     });
 
     it("should add the player by model", function() {
       game.addPlayer( player, 'red' );
-      expect(game._gamePlayers.length).toEqual(1);
-      expect(game._gamePlayers.at(0).get('playerId')).toEqual(player.get('id'));
+      expect(game.gamePlayers.length).toEqual(1);
+      expect(game.gamePlayers.at(0).get('playerId')).toEqual(player.get('id'));
     });
 
     it("should error when trying to add more than max players", function() {
       // setting max players to 3
-      game._gameType.get('players').max = 3;
+      game.gameType.get('players').max = 3;
       _.each(['red','black','gold'], function(color) {
         var test = new window.Models.Player({ name : 'Test' });
         window.collections.players.add(test);
         game.addPlayer( test, color );
       });
-      expect(game._gamePlayers.length).toEqual(3);
+      expect(game.gamePlayers.length).toEqual(3);
       var num5 = new window.Models.Player({ name : 'Test' });
       window.collections.players.add(num5);
       expect( function(){ game.addPlayer( num5, 'blue' ) } ).toThrow('Already at max of 3 players.');
-      expect(game._gamePlayers.length).toEqual(3);
+      expect(game.gamePlayers.length).toEqual(3);
 
       // setting max players back to 5
-      game._gameType.get('players').max = 5;
+      game.gameType.get('players').max = 5;
     });
   });
 
@@ -105,12 +119,12 @@ describe("Model::Game", function() {
 
     it("should remove the player by id", function() {
       game.removePlayer( player.get('id') );
-      expect(game._gamePlayers.length).toEqual(0);
+      expect(game.gamePlayers.length).toEqual(0);
     });
 
     it("should remove the player by model", function() {
       game.removePlayer( player );
-      expect(game._gamePlayers.length).toEqual(0);
+      expect(game.gamePlayers.length).toEqual(0);
     });
   });
 

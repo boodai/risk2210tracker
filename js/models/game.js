@@ -15,17 +15,16 @@ window.Collections = window.Collections || {};
       var game = this; attributes || (attributes = {}); options || (options = {});
 
       if( !exists(attributes.gameTypeId) || attributes.gameTypeId == null ) { throw 'gameTypeId is required.'; }
-      if( !exists(attributes.numYears) || attributes.numYears == null ) { throw 'numYears is required.'; }
 
-      game._gameType = window.collections.data.gameTypes.get(attributes.gameTypeId);
-      if(!game._gameType) { throw 'Game type not found.' }
+      game.gameType = window.collections.data.gameTypes.get(attributes.gameTypeId);
+      if(!game.gameType) { throw 'Game type not found.' }
 
-      var numYears = parseInt(attributes.numYears),
-          min = game._gameType.get('years').min,
-          max = game._gameType.get('years').max;
-      if( numYears < min || numYears > max ) { throw numYears + ' must be between ' + min + ' and ' + max; }
+      // default numYears
+      if( !exists(attributes.numYears) || attributes.numYears == null ) {
+        attributes.numYears = game.gameType.get('years').default;
+      }
 
-      game.set('numYears', numYears);
+      game.setYears(attributes.numYears);
 
       // lets give it a nice guid id
       game.set('id', uuid());
@@ -33,11 +32,19 @@ window.Collections = window.Collections || {};
       game.set('createdAt', new Date());
 
       // load up game players collection if need be
-      game._gamePlayers = new Collections.GamePlayers(null, { game:game });
+      game.gamePlayers = new Collections.GamePlayers(null, { game:game });
       // create years collection
       game.years = new Collections.Years(null, { game:game });
 
       // Create and display the initial view
+    },
+    setYears : function(years) { var game = this;
+      var numYears = parseInt(years),
+        min = game.gameType.get('years').min,
+        max = game.gameType.get('years').max;
+      if( numYears < min || numYears > max ) { throw numYears + ' must be between ' + min + ' and ' + max; }
+
+      game.set('numYears', numYears);
     },
     // Set players
     addPlayer: function(player, color) {
@@ -51,19 +58,19 @@ window.Collections = window.Collections || {};
 
       // validate color
       if(color) {
-        var colors = Object.keys(game._gameType.get('players').colors);
+        var colors = Object.keys(game.gameType.get('players').colors);
         // make sure valid color
         if(!_.contains(colors, color)) { throw color + ' must be one of [' + colors.join() + '].' }
-        usedColors = game._gamePlayers.pluck('color');
+        usedColors = game.gamePlayers.pluck('color');
         if(_.contains(usedColors, color)) { throw color + ' has already been used.' }
       }
 
       // make sure not already at max players
-      var max = game._gameType.get('players').max;
-      if(game._gamePlayers.length >= max) { throw 'Already at max of ' + max + ' players.' }
+      var max = game.gameType.get('players').max;
+      if(game.gamePlayers.length >= max) { throw 'Already at max of ' + max + ' players.' }
 
       // add the player
-      game._gamePlayers.add({ playerId : newPlayer.get('id'), color : color });
+      game.gamePlayers.add({ playerId : newPlayer.get('id'), color : color });
       return game;  // hopefully so we can chain
     },
     removePlayer: function(player) {
@@ -77,15 +84,15 @@ window.Collections = window.Collections || {};
       }
 
       // Check if player exists in game players collection
-      var newPlayers = game._gamePlayers.where({playerId: playerId});
+      var newPlayers = game.gamePlayers.where({playerId: playerId});
       if( !newPlayers[0] ) { throw 'Player not found in game.' }
 
       // Remove the player
-      game._gamePlayers.remove(newPlayers[0]);
+      game.gamePlayers.remove(newPlayers[0]);
       return game;
 
     },
-    startGame : function() {
+    setupBoard : function() {
       var game = this;
       // TODO : make sure have minimum number of players
 
@@ -93,18 +100,13 @@ window.Collections = window.Collections || {};
       game.createBoard();
       // randomize the board for start (only land territories)
       game.randomizeBoard();
-      // Create year
-      game.addYear();
-      // get turn order
-      // start first year, first player
-
     },
     createBoard: function() {
       var game = this;
 
       game._board = {};
 
-      game._gameType.maps.each(function(map) {
+      game.gameType.maps.each(function(map) {
         map.continents.each(function(continent) {
           continent.territories.each(function(territory) {
             game._board[territory.id] = null;
@@ -128,9 +130,9 @@ window.Collections = window.Collections || {};
       fisherYates(landTerritories);
 
       // Territories per player
-      var numEach = parseInt(landTerritories.length/game._gamePlayers.length);
+      var numEach = parseInt(landTerritories.length/game.gamePlayers.length);
 
-      game._gamePlayers.each(function(player) {
+      game.gamePlayers.each(function(player) {
         for(var y=0; y < numEach; y++) {
           var terrKey =  landTerritories.pop();
           game._board[terrKey] = player.get('playerId');
@@ -142,12 +144,11 @@ window.Collections = window.Collections || {};
       for(var y=0; y < remainder; y++) {
         var terrKey =  landTerritories.pop();
         // random player
-        var rand = Math.floor(Math.random()*(game._gamePlayers.length));
-        var player = game._gamePlayers.at(rand);
+        var rand = Math.floor(Math.random()*(game.gamePlayers.length));
+        var player = game.gamePlayers.at(rand);
         game._board[terrKey] = player.get('playerId');
       }
     },
-    // Start new year
     addYear : function() {
       var game = this;
 
@@ -156,6 +157,7 @@ window.Collections = window.Collections || {};
       game.years.add({ gameId : game.get('id'), number : game.years.length+1 });
     },
     setPlayerOrderForYear : function(year, players) {
+      // TODO make sure players are players in the game
       year.set('playerOrder',players);
     },
     addTurn : function() {
@@ -163,7 +165,7 @@ window.Collections = window.Collections || {};
 
       var year = game.years.last();
       // Check if all turns done
-      if(year.turns.length >= game._gamePlayers.length) { throw 'All turns played for year.' }
+      if(year.turns.length >= game.gamePlayers.length) { throw 'All turns played for year.' }
 
       // what turn are we
       var lastTurn = year.turns.last();

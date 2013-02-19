@@ -31,7 +31,8 @@ window.JST = window.JST || {};
     },
     setupGame : function() {
       // TODO better way to do this not accessing controller directly
-      app.gameSetupView();
+      // TODO find a wy to not call directly into window.app
+      window.app.createGame('risk2210');
     }
   });
 

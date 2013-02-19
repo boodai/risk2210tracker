@@ -15,6 +15,9 @@ window.Collections = window.Collections || {};
       var model = this;
       // lets give it a nice guid id
       model.set('id', uuid());
+    },
+    player : function() { var gamePlayer = this;
+      return window.collections.players.get(gamePlayer.get('playerId'));
     }
   });
 
