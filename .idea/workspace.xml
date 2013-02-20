@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ee47731-6b6c-49de-8f36-9136c4a080e9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trials/cory_ipad_filled.psd" afterPath="$PROJECT_DIR$/trials/cory_ipad_filled.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trials/moon_large.psd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/data/risk2210.js" afterPath="$PROJECT_DIR$/js/data/risk2210.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/turn.js" afterPath="$PROJECT_DIR$/js/views/turn.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Risk.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361340108438" ignored="false" />
+    <file path="/Dummy.txt" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361346497013" ignored="false" />
     <file path="/game-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361220738686" ignored="false" />
     <file path="/Misc.txt" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360302283144" ignored="false" />
     <file path="/game.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361257154578" ignored="false" />
@@ -21,7 +22,7 @@
     <file path="/game-player.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361228852325" ignored="false" />
     <file path="/game-player-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360463937480" ignored="false" />
     <file path="/year-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361068378351" ignored="false" />
-    <file path="/turn.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361306750456" ignored="false" />
+    <file path="/turn.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361345644170" ignored="false" />
     <file path="/turn-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361071126557" ignored="false" />
     <file path="/action.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361073453905" ignored="false" />
     <file path="/action-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361090293541" ignored="false" />
@@ -35,7 +36,7 @@
     <file path="/board.html" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361230150438" ignored="false" />
     <file path="/rapheal.html" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361230205624" ignored="false" />
     <file path="/end-game.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361236521605" ignored="false" />
-    <file path="/risk2210.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361341505524" ignored="false" />
+    <file path="/risk2210.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361346424816" ignored="false" />
     <file path="$PROJECT_DIR$/../mellmo-git/web-server/lib/roambi/flow/flow_publisher.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361315712823" ignored="false" />
     <file path="/flow_publisher.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361315706122" ignored="false" />
     <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/flow/flow_publisher_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361315858756" ignored="false" />
@@ -78,8 +79,38 @@
           <file leaf-file-name="risk2210.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/data/risk2210.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="73" column="0" selection-start="7270" selection-end="7270" vertical-scroll-proportion="0.35478547">
-                  <folding />
+                <state line="660" column="1965" selection-start="177800" selection-end="179765" vertical-scroll-proportion="0.38118812">
+                  <folding>
+                    <marker date="1361346433000" expanded="true" signature="49:179810" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="69:179787" placeholder="{&quot;id&quot;: 'g001'...}" />
+                    <marker date="1361346433000" expanded="true" signature="743:179787" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="163472:179787" placeholder="{&quot;id&quot;: 'm002'...}" />
+                    <marker date="1361346433000" expanded="true" signature="163735:179787" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="177512:179787" placeholder="{&quot;id&quot;: 'c013'...}" />
+                    <marker date="1361346433000" expanded="true" signature="177677:179787" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="177705:179787" placeholder="{&quot;id&quot;: 't060'...}" />
+                    <marker date="1361346433000" expanded="true" signature="177798:179787" placeholder="{&quot;svg&quot;: 'M1045.472,204.043c-2.568,2.305-4.093,4.118-6.007,5.301...}" />
+                    <marker date="1361346433000" expanded="true" signature="179858:182963" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="179957:182947" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="182993:185188" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="183090:185172" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="185218:187666" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="185315:187650" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="187725:207185" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="187888:207173" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="187914:190130" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="188005:190114" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="190160:194972" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="190257:194956" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="195006:197767" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="195107:197751" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="197795:201821" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="197888:201805" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="201850:205117" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="201945:205101" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="205141:207159" placeholder="{...}" />
+                    <marker date="1361346433000" expanded="true" signature="205230:207143" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -88,10 +119,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="year.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="year.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/models/year.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="0" selection-start="481" selection-end="577" vertical-scroll-proportion="0.5280528">
+                <state line="13" column="10" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="turn.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/views/turn.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="23" column="54" selection-start="638" selection-end="638" vertical-scroll-proportion="0.51650167">
                   <folding />
                 </state>
               </provider>
@@ -126,12 +166,12 @@
         <option value="$PROJECT_DIR$/js/models/turn.js" />
         <option value="$PROJECT_DIR$/js/models/game.js" />
         <option value="$PROJECT_DIR$/spec/models/game-spec.js" />
-        <option value="$PROJECT_DIR$/js/views/turn.js" />
         <option value="$PROJECT_DIR$/risk.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/js/views/map.js" />
         <option value="$PROJECT_DIR$/trials/board_ipad.psd.svg" />
         <option value="$PROJECT_DIR$/trials/ccc.svg" />
+        <option value="$PROJECT_DIR$/js/views/turn.js" />
         <option value="$PROJECT_DIR$/js/data/risk2210.js" />
       </list>
     </option>
@@ -471,7 +511,15 @@
       <created>1361340132713</created>
       <updated>1361340132713</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="earth map all filled in.">
+      <created>1361341599901</created>
+      <updated>1361341599901</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Moon map filled in.">
+      <created>1361346499998</created>
+      <updated>1361346499998</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -556,7 +604,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clickable territorries.&#10;All countries but asia. and the moon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moon map filled in." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -586,6 +634,8 @@
     <MESSAGE value="Got territories highlighting" />
     <MESSAGE value="Trying to get names to work&#10;" />
     <MESSAGE value="Clickable territorries.&#10;All countries but asia. and the moon" />
+    <MESSAGE value="earth map all filled in." />
+    <MESSAGE value="Moon map filled in." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -631,13 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/turn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="26" selection-start="327" selection-end="327" vertical-scroll-proportion="0.13137893">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/models/game.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="106" column="10" selection-start="3736" selection-end="3736" vertical-scroll-proportion="0.017372422">
@@ -655,13 +698,6 @@
     <entry file="file://$PROJECT_DIR$/js/models/action.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="0.06852248">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/year.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="481" selection-end="577" vertical-scroll-proportion="0.5280528">
           <folding />
         </state>
       </provider>
@@ -687,10 +723,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/year.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="10" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/turn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="54" selection-start="638" selection-end="638" vertical-scroll-proportion="0.51650167">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/data/risk2210.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="0" selection-start="7270" selection-end="7270" vertical-scroll-proportion="0.35478547">
-          <folding />
+        <state line="660" column="1965" selection-start="177800" selection-end="179765" vertical-scroll-proportion="0.38118812">
+          <folding>
+            <marker date="1361346433000" expanded="true" signature="49:179810" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="69:179787" placeholder="{&quot;id&quot;: 'g001'...}" />
+            <marker date="1361346433000" expanded="true" signature="743:179787" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="163472:179787" placeholder="{&quot;id&quot;: 'm002'...}" />
+            <marker date="1361346433000" expanded="true" signature="163735:179787" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="177512:179787" placeholder="{&quot;id&quot;: 'c013'...}" />
+            <marker date="1361346433000" expanded="true" signature="177677:179787" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="177705:179787" placeholder="{&quot;id&quot;: 't060'...}" />
+            <marker date="1361346433000" expanded="true" signature="177798:179787" placeholder="{&quot;svg&quot;: 'M1045.472,204.043c-2.568,2.305-4.093,4.118-6.007,5.301...}" />
+            <marker date="1361346433000" expanded="true" signature="179858:182963" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="179957:182947" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="182993:185188" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="183090:185172" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="185218:187666" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="185315:187650" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="187725:207185" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="187888:207173" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="187914:190130" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="188005:190114" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="190160:194972" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="190257:194956" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="195006:197767" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="195107:197751" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="197795:201821" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="197888:201805" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="201850:205117" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="201945:205101" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="205141:207159" placeholder="{...}" />
+            <marker date="1361346433000" expanded="true" signature="205230:207143" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

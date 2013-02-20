@@ -26,7 +26,7 @@ window.JST = window.JST || {};
       var gamePlayer = view.model.gamePlayers.where({ playerId : player.id })[0];
       // need the maps
       // just sending earth for now
-      var earth = view.model.gameType.maps.first();
+      var earth = view.model.gameType.maps.last();
       view.maps.push(new Views.Map({ model : earth, gamePlayer : gamePlayer, game : view.model }));
 
       // need the stats
