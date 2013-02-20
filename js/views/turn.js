@@ -10,7 +10,7 @@ window.JST = window.JST || {};
     className: 'bbv-turn',
 
     events: {
-      'click .btn' : 'endTurn'
+      'click .btn.end-turn' : 'endTurn'
     },
     initialize: function(options) {
       var view = this;

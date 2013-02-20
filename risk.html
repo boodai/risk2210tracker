@@ -51,11 +51,27 @@
       border: 1px solid black;
       width: 1024px;
       height: 768px;
+        overflow: hidden;
+    }
+    .bbv-map {
+        overflow: hidden;
+        height: 768px;
+    }
+    .bbv-map .controls{
+      position: absolute;
+      top: 650px;
+      float: left;
+      left: 400px;
     }
     .bbv-map svg {
       border: 1px solid blue;
       -webkit-transform: scale(0.5);
       -webkit-transform-origin: 0 0;
+    }
+    .bbv-turn > .controls {
+      position: absolute;
+      top: 746px;
+      float: left;
     }
     #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
     #sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
@@ -122,18 +138,17 @@
   </script>
 
   <script type="text/template" id="turn" class="template">
-    tap on territories to take ownership
-    <hr>
+    <div class="controls">
     player : <@= player @>
-    <p>undo button</p>
-    <p>clear button</p>
-    <button class="btn">end Turn</button>
-
+    <button class="btn end-turn">end Turn</button>
+    </div>
   </script>
 
   <script type="text/template" id="map" class="template">
-    map
-
+    <div class="controls">
+      <button class="btn undo">undo</button>
+      <button class="btn clear">clear</button>
+    </div>
   </script>
 
   <script type="text/template" id="end-game" class="template">

@@ -102,6 +102,10 @@ window.Views = window.Views || {};
     newAction :  function(territoryId, playerId) { var app = this;
       app._currentGame.addAction(territoryId, playerId);
     },
+    undoAction :  function() { var app = this;
+      last = app._currentGame.years.last().turns.last().actions.last();
+      app._currentGame.years.last().turns.last().actions.remove(last);
+    },
     endTurn : function() { var app = this;
       // check if turns all used up this year
       if(app._currentGame.years.last().turns.last().get('number') == app._currentGame.gamePlayers.length) {
