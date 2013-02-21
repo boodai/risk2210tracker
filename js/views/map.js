@@ -7,7 +7,7 @@ window.JST = window.JST || {};
 
   Views.Map = Backbone.View.extend({
     tagName: 'div',
-    className: 'bbv-map',
+    className: function() {return 'bbv-map '+this.model.id},
 
     events: {
       'click .btn.undo' : 'undoAction',
@@ -28,6 +28,8 @@ window.JST = window.JST || {};
       if(view._template != undefined ) {
         view.$el.html(view._template());
       }
+
+      view.$el.css({ height : view.model.get('display').svg.height/2, width : view.model.get('display').svg.width/2 });
 
       view.paper = Raphael(view.el, view.model.get('display').svg.width, view.model.get('display').svg.height);
 

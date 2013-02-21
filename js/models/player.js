@@ -8,17 +8,18 @@ window.Collections = window.Collections || {};
       'id' : null,
       'name' : null
     },
-    //localStorage: new Store(app.storeName + '::Player'),
     initialize: function(attributes, options) {
       var model = this;
       // lets give it a nice guid id
       model.set('id', uuid());
+
+
     }
   });
 
   Collections.Players = Backbone.Collection.extend({
-    model: window.Models.Player
-    //localStorage: new Store(app.storeName + '::Player')
+    model: window.Models.Player,
+    localStorage: new Backbone.LocalStorage("Risk::Model::Player")
   });
 
 })(Backbone, window.Models, window.Collections);

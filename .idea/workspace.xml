@@ -2,54 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ee47731-6b6c-49de-8f36-9136c4a080e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trials/moon_large.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/data/risk2210.js" afterPath="$PROJECT_DIR$/js/data/risk2210.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/third-party/js/backbone.localStorage-1.1.0/backbone.localStorage-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/views/stats.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/third-party/js/backbone.localStorage/backbone.localStorage-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/third-party/js/backbone.localStorage/backbone.localStorage.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/action.js" afterPath="$PROJECT_DIR$/js/models/action.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/game-player.js" afterPath="$PROJECT_DIR$/js/models/game-player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/game.js" afterPath="$PROJECT_DIR$/js/models/game.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/map.js" afterPath="$PROJECT_DIR$/js/views/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/player.js" afterPath="$PROJECT_DIR$/js/models/player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/risk.html" afterPath="$PROJECT_DIR$/risk.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec.html" afterPath="$PROJECT_DIR$/spec.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/turn.js" afterPath="$PROJECT_DIR$/js/models/turn.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/turn.js" afterPath="$PROJECT_DIR$/js/views/turn.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/year.js" afterPath="$PROJECT_DIR$/js/models/year.js" />
     </list>
     <ignored path="Risk.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361346497013" ignored="false" />
+    <file path="/Dummy.txt" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361406421627" ignored="false" />
     <file path="/game-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361220738686" ignored="false" />
     <file path="/Misc.txt" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360302283144" ignored="false" />
-    <file path="/game.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361257154578" ignored="false" />
+    <file path="/game.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361398566951" ignored="false" />
     <file path="/game-type.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360303508994" ignored="false" />
     <file path="/game-type-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360303607954" ignored="false" />
-    <file path="/map.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361317665328" ignored="false" />
+    <file path="/map.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361392420176" ignored="false" />
     <file path="/continent.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360303726034" ignored="false" />
     <file path="/year.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361067807860" ignored="false" />
     <file path="/spec.html" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361239097835" ignored="false" />
     <file path="/game-player.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361228852325" ignored="false" />
     <file path="/game-player-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360463937480" ignored="false" />
     <file path="/year-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361068378351" ignored="false" />
-    <file path="/turn.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361345644170" ignored="false" />
+    <file path="/turn.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361396056695" ignored="false" />
     <file path="/turn-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361071126557" ignored="false" />
     <file path="/action.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361073453905" ignored="false" />
     <file path="/action-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361090293541" ignored="false" />
-    <file path="/risk.html" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361307833809" ignored="false" />
-    <file path="/app.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361310325910" ignored="false" />
+    <file path="/risk.html" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361396904683" ignored="false" />
+    <file path="/app.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361397754958" ignored="false" />
     <file path="/start.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361140930769" ignored="false" />
     <file path="/game-setup.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361220957483" ignored="false" />
     <file path="/app-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361211413302" ignored="false" />
     <file path="/turn-order.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361235726984" ignored="false" />
-    <file path="/a.dummy" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361257618397" ignored="false" />
+    <file path="/a.dummy" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361384544709" ignored="false" />
     <file path="/board.html" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361230150438" ignored="false" />
     <file path="/rapheal.html" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361230205624" ignored="false" />
     <file path="/end-game.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361236521605" ignored="false" />
     <file path="/risk2210.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361346424816" ignored="false" />
-    <file path="$PROJECT_DIR$/../mellmo-git/web-server/lib/roambi/flow/flow_publisher.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361315712823" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/lib/roambi/flow/flow_publisher.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361394698101" ignored="false" />
     <file path="/flow_publisher.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361315706122" ignored="false" />
-    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/flow/flow_publisher_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361315858756" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/flow/flow_publisher_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361394698101" ignored="false" />
     <file path="/flow_publisher_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361315858017" ignored="false" />
     <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-data.git/lib/model/roambiflow/job.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361305069285" ignored="false" />
     <file path="/job.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361305059344" ignored="false" />
     <file path="/a.html" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361307797809" ignored="false" />
-    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/support/flow_helper.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361316163841" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/support/flow_helper.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361382177827" ignored="false" />
     <file path="/flow_helper.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361316163841" ignored="false" />
-    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/decorators/flow/issue_rbf_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361317709325" ignored="false" />
-    <file path="/issue_rbf_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361317708951" ignored="false" />
-    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/decorators/flow/issue_rbf_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361317563280" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/decorators/flow/issue_rbf_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361394698100" ignored="false" />
+    <file path="/issue_rbf_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361392553261" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/decorators/flow/issue_rbf_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361394698101" ignored="false" />
     <file path="/issue_rbf_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361317090893" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/config/routes.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361382177827" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-data.git/lib/model/roambiflow/media.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361391276064" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-data.git/spec/roambi-data/model/roambiflow/media_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361391432284" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/decorators/flow/page_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361388776368" ignored="false" />
+    <file path="/page_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361387554093" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/decorators/flow/page_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361388836009" ignored="false" />
+    <file path="/page_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361388836009" ignored="false" />
+    <file path="/block.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361388015752" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-data.git/lib/model/roambiflow/block.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361388018027" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/decorators/flow/block_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361397107846" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/decorators/flow/block_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361397132168" ignored="false" />
+    <file path="/block_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361388924334" ignored="false" />
+    <file path="/media.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361391234948" ignored="false" />
+    <file path="/media_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361391429684" ignored="false" />
+    <file path="/player.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361394104797" ignored="false" />
+    <file path="/stats.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361397626471" ignored="false" />
+    <file path="/block_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361397069041" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,82 +94,80 @@
     <disable_hints />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.59844404">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="map.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/views/map.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="35" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="risk2210.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/data/risk2210.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="660" column="1965" selection-start="177800" selection-end="179765" vertical-scroll-proportion="0.38118812">
-                  <folding>
-                    <marker date="1361346433000" expanded="true" signature="49:179810" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="69:179787" placeholder="{&quot;id&quot;: 'g001'...}" />
-                    <marker date="1361346433000" expanded="true" signature="743:179787" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="163472:179787" placeholder="{&quot;id&quot;: 'm002'...}" />
-                    <marker date="1361346433000" expanded="true" signature="163735:179787" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="177512:179787" placeholder="{&quot;id&quot;: 'c013'...}" />
-                    <marker date="1361346433000" expanded="true" signature="177677:179787" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="177705:179787" placeholder="{&quot;id&quot;: 't060'...}" />
-                    <marker date="1361346433000" expanded="true" signature="177798:179787" placeholder="{&quot;svg&quot;: 'M1045.472,204.043c-2.568,2.305-4.093,4.118-6.007,5.301...}" />
-                    <marker date="1361346433000" expanded="true" signature="179858:182963" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="179957:182947" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="182993:185188" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="183090:185172" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="185218:187666" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="185315:187650" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="187725:207185" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="187888:207173" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="187914:190130" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="188005:190114" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="190160:194972" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="190257:194956" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="195006:197767" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="195107:197751" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="197795:201821" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="197888:201805" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="201850:205117" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="201945:205101" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="205141:207159" placeholder="{...}" />
-                    <marker date="1361346433000" expanded="true" signature="205230:207143" placeholder="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="year.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/models/year.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="10" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="turn.js" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/views/turn.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="54" selection-start="638" selection-end="638" vertical-scroll-proportion="0.51650167">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="turn.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/views/turn.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="25" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stats.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/views/stats.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="49" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="continent.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/models/data/continent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="12" selection-start="285" selection-end="290" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/models/game.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="199" column="23" selection-start="6781" selection-end="6781" vertical-scroll-proportion="0.9227053">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="risk.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/risk.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="158" column="23" selection-start="5674" selection-end="5674" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/views/map.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="29" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="117" column="7" selection-start="3719" selection-end="3833" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spec.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="0" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -157,22 +185,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/trials/rapheal.html" />
-        <option value="$PROJECT_DIR$/js/views/end-game.js" />
-        <option value="$PROJECT_DIR$/js/views/turn-order.js" />
-        <option value="$PROJECT_DIR$/spec.html" />
-        <option value="$PROJECT_DIR$/js/additional.js" />
-        <option value="$PROJECT_DIR$/trials/board.html" />
-        <option value="$PROJECT_DIR$/js/models/turn.js" />
-        <option value="$PROJECT_DIR$/js/models/game.js" />
-        <option value="$PROJECT_DIR$/spec/models/game-spec.js" />
-        <option value="$PROJECT_DIR$/risk.html" />
-        <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/js/views/map.js" />
         <option value="$PROJECT_DIR$/trials/board_ipad.psd.svg" />
         <option value="$PROJECT_DIR$/trials/ccc.svg" />
-        <option value="$PROJECT_DIR$/js/views/turn.js" />
         <option value="$PROJECT_DIR$/js/data/risk2210.js" />
+        <option value="$PROJECT_DIR$/third-party/js/backbone.localStorage/backbone.localStorage-min.js" />
+        <option value="$PROJECT_DIR$/js/views/map.js" />
+        <option value="$PROJECT_DIR$/js/models/game-player.js" />
+        <option value="$PROJECT_DIR$/js/models/action.js" />
+        <option value="$PROJECT_DIR$/js/models/player.js" />
+        <option value="$PROJECT_DIR$/js/models/year.js" />
+        <option value="$PROJECT_DIR$/js/models/turn.js" />
+        <option value="$PROJECT_DIR$/js/views/turn.js" />
+        <option value="$PROJECT_DIR$/spec.html" />
+        <option value="$PROJECT_DIR$/risk.html" />
+        <option value="$PROJECT_DIR$/js/views/stats.js" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/js/models/game.js" />
       </list>
     </option>
   </component>
@@ -207,7 +235,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,6 +264,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="trials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Risk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Risk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="third-party" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Risk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Risk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="third-party" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backbone.localStorage-1.1.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Risk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Risk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="third-party" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -304,12 +385,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Risk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Risk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="data" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -519,7 +623,11 @@
       <created>1361346499998</created>
       <updated>1361346499998</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Moon map filled in.">
+      <created>1361346512592</created>
+      <updated>1361346512592</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -546,21 +654,21 @@
     <frame x="0" y="22" width="1630" height="1028" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32604167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3253638" sideWeight="0.49968886" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15930305" sideWeight="0.67151767" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20161793" sideWeight="0.6746362" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32604167" sideWeight="0.4959552" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32848233" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -641,136 +749,101 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/trials/board_ipad.psd.svg">
+    <entry file="file://$PROJECT_DIR$/third-party/js/backbone.localStorage-1.1.0/backbone.localStorage-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="10" selection-start="554" selection-end="554" vertical-scroll-proportion="-7.9815416">
+        <state line="5" column="1" selection-start="111" selection-end="111" vertical-scroll-proportion="0.087051146" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/data/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/year.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="519" selection-end="674" vertical-scroll-proportion="0.3316062">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trials/asia.svg">
+    <entry file="file://$PROJECT_DIR$/js/models/turn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="37" selection-start="349" selection-end="349" vertical-scroll-proportion="0.13897938" />
+        <state line="22" column="20" selection-start="632" selection-end="632" vertical-scroll-proportion="0.36476684" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/js/models/player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="6" selection-start="3550" selection-end="3550" vertical-scroll-proportion="0.053452116">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/data/game-type.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/data/continent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="0.24870466" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/models/game-player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="10" selection-start="3736" selection-end="3736" vertical-scroll-proportion="0.017372422">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/game-spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="55" selection-start="5083" selection-end="5083" vertical-scroll-proportion="0.017372422">
-          <folding />
-        </state>
+        <state line="12" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.19896373" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/models/action.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="129" selection-end="129" vertical-scroll-proportion="0.06852248">
+        <state line="37" column="0" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.6134715" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/turn-order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1629" vertical-scroll-proportion="-0.016580312" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/turn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="25" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="32" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.071428575">
+        <state line="43" column="0" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/risk.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="18" selection-start="2916" selection-end="2916" vertical-scroll-proportion="0.017857144">
+        <state line="158" column="23" selection-start="5674" selection-end="5674" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/data/continent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="12" selection-start="285" selection-end="290" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/stats.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="49" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/views/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
+        <state line="61" column="29" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/year.js">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
+        <state line="117" column="7" selection-start="3719" selection-end="3833" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/turn.js">
+    <entry file="file://$PROJECT_DIR$/js/models/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="54" selection-start="638" selection-end="638" vertical-scroll-proportion="0.51650167">
+        <state line="199" column="23" selection-start="6781" selection-end="6781" vertical-scroll-proportion="0.9227053">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/data/risk2210.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="660" column="1965" selection-start="177800" selection-end="179765" vertical-scroll-proportion="0.38118812">
-          <folding>
-            <marker date="1361346433000" expanded="true" signature="49:179810" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="69:179787" placeholder="{&quot;id&quot;: 'g001'...}" />
-            <marker date="1361346433000" expanded="true" signature="743:179787" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="163472:179787" placeholder="{&quot;id&quot;: 'm002'...}" />
-            <marker date="1361346433000" expanded="true" signature="163735:179787" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="177512:179787" placeholder="{&quot;id&quot;: 'c013'...}" />
-            <marker date="1361346433000" expanded="true" signature="177677:179787" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="177705:179787" placeholder="{&quot;id&quot;: 't060'...}" />
-            <marker date="1361346433000" expanded="true" signature="177798:179787" placeholder="{&quot;svg&quot;: 'M1045.472,204.043c-2.568,2.305-4.093,4.118-6.007,5.301...}" />
-            <marker date="1361346433000" expanded="true" signature="179858:182963" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="179957:182947" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="182993:185188" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="183090:185172" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="185218:187666" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="185315:187650" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="187725:207185" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="187888:207173" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="187914:190130" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="188005:190114" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="190160:194972" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="190257:194956" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="195006:197767" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="195107:197751" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="197795:201821" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="197888:201805" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="201850:205117" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="201945:205101" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="205141:207159" placeholder="{...}" />
-            <marker date="1361346433000" expanded="true" signature="205230:207143" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>

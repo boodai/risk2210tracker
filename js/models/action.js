@@ -11,7 +11,6 @@ window.Collections = window.Collections || {};
       'playerId' : null,
       'number' : null
     },
-    //localStorage: new Store(app.storeName + '::Player'),
     initialize: function(attributes, options) {
       var action = this;
       // lets give it a nice guid id
@@ -21,6 +20,7 @@ window.Collections = window.Collections || {};
 
   Collections.Actions = Backbone.Collection.extend({
     model: window.Models.Action,
+    localStorage: new Backbone.LocalStorage("Risk::Model::Action"),
     initialize: function(models, options) {
       options || (options = {});
       if (options.turn) {
@@ -35,8 +35,6 @@ window.Collections = window.Collections || {};
     comparator : function(action) {
       return action.get("number");
     }
-
-    //localStorage: new Store(app.storeName + '::Player')
   });
 
 })(Backbone, window.Models, window.Collections);

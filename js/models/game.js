@@ -8,11 +8,11 @@ window.Collections = window.Collections || {};
       'id' : null,
       'gameTypeId' : null,
       'numYears' : null,
+      'initialBoard' : null,
       'createdAt' : null
     },
-    //localStorage: new Store('Risk::Model::Game'),
-    initialize: function(attributes, options) {
-      var game = this; attributes || (attributes = {}); options || (options = {});
+    initialize: function(attributes, options) { var game = this;
+      attributes || (attributes = {}); options || (options = {});
 
       if( !exists(attributes.gameTypeId) || attributes.gameTypeId == null ) { throw 'gameTypeId is required.'; }
 
@@ -36,7 +36,11 @@ window.Collections = window.Collections || {};
       // create years collection
       game.years = new Collections.Years(null, { game:game });
 
-      // Create and display the initial view
+      // make sure on save, that we save all children
+      game.on('sync', function(){
+        game.gamePlayers.each(function(m) { m.save(); });
+        game.years.each(function(m) { m.save(); });
+      }, this);
     },
     setYears : function(years) { var game = this;
       var numYears = parseInt(years),
@@ -100,6 +104,8 @@ window.Collections = window.Collections || {};
       game.createBoard();
       // randomize the board for start (only land territories)
       game.randomizeBoard();
+      // save the initial board
+      game.set('initialBoard', game.board);
     },
     createBoard: function() {
       var game = this;
@@ -186,12 +192,24 @@ window.Collections = window.Collections || {};
       var actions = game.years.last().turns.last().actions;
       actions.add({ territoryId : territoryId, playerId : playerId, number : actions.length+1 });
       game.board[territoryId] = playerId;
+    },
+    removeLastAction : function() { var game = this;
+      last = game.years.last().turns.last().actions.last();
+      if(last) {
+        last.destroy();
+        // update board
+
+        // TODO switch to saving the state on actions
+      }
+      var actions = game.years.last().turns.last().actions;
+      actions.add({ territoryId : territoryId, playerId : playerId, number : actions.length+1 });
+      game.board[territoryId] = playerId;
     }
   });
 
   Collections.Games = Backbone.Collection.extend({
-    model: window.Models.Game
-    //localStorage: new Backbone.LocalStorage('Risk::Model::Game')
+    model: window.Models.Game,
+    localStorage: new Backbone.LocalStorage("Risk::Model::Game")
   });
 
 

@@ -11,6 +11,7 @@ window.Views = window.Views || {};
       console.info('app::init');
 
       // Get the collections up and running
+      collections.games = new Collections.Games();
       collections.players = new Collections.Players();
 
       // setup current game variable
@@ -54,6 +55,7 @@ window.Views = window.Views || {};
         throw 'Game type not found.';
       }
       app._currentGame = new Models.Game({ gameTypeId:gameTypeId});
+      collections.games.add(app._currentGame);
 
       // show setup View
       app.gameSetupView();
@@ -73,16 +75,19 @@ window.Views = window.Views || {};
       _.each(players, function(color, name) {
         var test = new window.Models.Player({ name : name });
         window.collections.players.add(test);
+        test.save();
         app._currentGame.addPlayer( test, color );
       });
 
       // start the game up
       app._currentGame.setupBoard();
       app.newYear();
+      app._currentGame.save();
     },
     newYear : function() { var app = this;
       // add a year to the game
       app._currentGame.addYear();
+      app._currentGame.save();
 
       // display turn order screen
       app.turnOrderView();
@@ -90,21 +95,30 @@ window.Views = window.Views || {};
     updateYear : function(data) { var app = this;
       // set the player order
       app._currentGame.setPlayerOrderForYear(app._currentGame.years.last(), data.order);
+      app._currentGame.save();
       // start a turn
       app.newTurn();
     },
     newTurn : function() { var app = this;
       // add a turn to the year
       app._currentGame.addTurn();
+      app._currentGame.save();
       // display the map
       app.turnView();
     },
     newAction :  function(territoryId, playerId) { var app = this;
       app._currentGame.addAction(territoryId, playerId);
+      app._currentGame.save();
+      app._currentGame.trigger('newAction');
     },
     undoAction :  function() { var app = this;
       last = app._currentGame.years.last().turns.last().actions.last();
-      app._currentGame.years.last().turns.last().actions.remove(last);
+      if(last) {
+        last.destroy();
+      }
+      app._currentGame.save();
+      app._currentGame.trigger('newAction');
+      //app._currentGame.years.last().turns.last().actions.remove(last);
     },
     endTurn : function() { var app = this;
       // check if turns all used up this year
@@ -124,6 +138,7 @@ window.Views = window.Views || {};
     },
     endGame : function() {
       // TODO end game stuff
+      app._currentGame.save();
       app.endGameView();
     },
     // TODO move these into a better place...
@@ -136,11 +151,19 @@ window.Views = window.Views || {};
     gameSetupView : function () {
       console.info('app::gameSetupView');
 
+      if(this.view != null) {
+        this.view.remove();
+      }
+
       this.view = new Views.GameSetup({ model : app._currentGame });
       $('.app').html(this.view.render().el);
     },
     turnOrderView : function () {
       console.info('app::turnOrderView');
+
+      if(this.view != null) {
+        this.view.remove();
+      }
 
       this.view = new Views.TurnOrder({ model : app._currentGame });
       $('.app').html(this.view.render().el);
@@ -148,11 +171,19 @@ window.Views = window.Views || {};
     turnView : function () {
       console.info('app::turnView');
 
+      if(this.view != null) {
+        this.view.remove();
+      }
+
       this.view = new Views.Turn({ model : app._currentGame });
       $('.app').html(this.view.render().el);
     },
     endGameView : function () {
       console.info('app::endGameView');
+
+      if(this.view != null) {
+        this.view.remove();
+      }
 
       this.view = new Views.EndGame({ model : app._currentGame });
       $('.app').html(this.view.render().el);

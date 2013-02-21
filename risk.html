@@ -9,7 +9,7 @@
   <script type="text/javascript" src='third-party/js/underscore-1.4.4/underscore-min.js'></script>
   <script type="text/javascript" src='third-party/js/json2/json2.js'></script>
   <script type='text/javascript' src='third-party/js/backbone-0.9.10/backbone-min.js'></script>
-  <script type='text/javascript' src='third-party/js/backbone.localStorage/backbone.localStorage-min.js'></script>
+  <script type='text/javascript' src='third-party/js/backbone.localStorage-1.1.0/backbone.localStorage-min.js'></script>
   <script type='text/javascript' src='third-party/js/raphaeljs-2.1.0/raphael-min.js'></script>
   <script type='text/javascript' src='third-party/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js'></script>
   <!-- Third Party Stylesheets -->
@@ -39,6 +39,7 @@
   <script type='text/javascript' src='js/views/game-setup.js'></script>
   <script type='text/javascript' src='js/views/turn-order.js'></script>
   <script type='text/javascript' src='js/views/turn.js'></script>
+  <script type='text/javascript' src='js/views/stats.js'></script>
   <script type='text/javascript' src='js/views/map.js'></script>
   <script type='text/javascript' src='js/views/end-game.js'></script>
 
@@ -57,6 +58,12 @@
         overflow: hidden;
         height: 768px;
     }
+    .bbv-map.earth {
+      background-color : #004276;
+    }
+    .bbv-map.moon {
+      background-color : #000000
+    }
     .bbv-map .controls{
       position: absolute;
       top: 650px;
@@ -71,7 +78,7 @@
     .bbv-turn > .controls {
       position: absolute;
       top: 746px;
-      float: left;
+      right: 10px;
     }
     #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
     #sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
@@ -139,9 +146,17 @@
 
   <script type="text/template" id="turn" class="template">
     <div class="controls">
-    player : <@= player @>
+      <button class="btn next-map">next map</button>
     <button class="btn end-turn">end Turn</button>
     </div>
+  </script>
+
+  <script type="text/template" id="stats" class="template">
+    year : <@= year @><br>
+    player : <@= player @><br>
+    territories : <@= territories @><br>
+    mods : <@= mods @><br>
+    energy : <@= energy @><br>
   </script>
 
   <script type="text/template" id="map" class="template">

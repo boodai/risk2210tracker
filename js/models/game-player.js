@@ -10,7 +10,6 @@ window.Collections = window.Collections || {};
       'playerId' : null,
       'color' : null
     },
-    //localStorage: new Store(app.storeName + '::Player'),
     initialize: function(attributes, options) {
       var model = this;
       // lets give it a nice guid id
@@ -23,6 +22,7 @@ window.Collections = window.Collections || {};
 
   Collections.GamePlayers = Backbone.Collection.extend({
     model: window.Models.GamePlayer,
+    localStorage: new Backbone.LocalStorage("Risk::Model::GamePlayer"),
     initialize: function(models, options) {
       options || (options = {});
       if (options.game) {
@@ -35,7 +35,6 @@ window.Collections = window.Collections || {};
         model.set('gameId', collection.game.get('id'));
       });
     }
-    //localStorage: new Store(app.storeName + '::Player')
   });
 
 })(Backbone, window.Models, window.Collections);

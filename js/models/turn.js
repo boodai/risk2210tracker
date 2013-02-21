@@ -10,7 +10,6 @@ window.Collections = window.Collections || {};
       'playerId' : null,
       'number' : null
     },
-    //localStorage: new Store(app.storeName + '::Player'),
     initialize: function(attributes, options) {
       var turn = this;
       // lets give it a nice guid id
@@ -19,6 +18,10 @@ window.Collections = window.Collections || {};
       // create actions collection
       turn.actions = new Collections.Actions(null, { turn:turn });
 
+      // make sure on save, that we save all children
+      turn.on('sync', function(){
+        turn.actions.each(function(m) { m.save(); });
+      }, this);
     },
     player : function() { var turn = this;
       return window.collections.players.get(turn.get('playerId'));
@@ -27,6 +30,7 @@ window.Collections = window.Collections || {};
 
   Collections.Turns = Backbone.Collection.extend({
     model: window.Models.Turn,
+    localStorage: new Backbone.LocalStorage("Risk::Model::Turn"),
     initialize: function(models, options) {
       options || (options = {});
       if (options.year) {
@@ -41,8 +45,6 @@ window.Collections = window.Collections || {};
     comparator : function(turn) {
       return turn.get("number");
     }
-
-    //localStorage: new Store(app.storeName + '::Player')
   });
 
 })(Backbone, window.Models, window.Collections);

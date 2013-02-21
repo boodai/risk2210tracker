@@ -10,24 +10,25 @@ window.JST = window.JST || {};
     className: 'bbv-turn',
 
     events: {
-      'click .btn.end-turn' : 'endTurn'
+      'click .btn.end-turn' : 'endTurn',
+      'click .btn.next-map' : 'nextMap'
     },
-    initialize: function(options) {
-      var view = this;
+    initialize: function(options) { var view = this;
       options = options || {};
       view._template = window.JST['turn'];
 
       // create the maps array
       view.maps = [];
+      view._currentMap = 0;
+      view.stats = new Views.Stats({ model : view.model });
     },
     render: function() { var view = this;
       var player = view.model.years.last().turns.last().player();
-      console.log(player.id);
       var gamePlayer = view.model.gamePlayers.where({ playerId : player.id })[0];
       // need the maps
-      // just sending earth for now
-      var earth = view.model.gameType.maps.last();
-      view.maps.push(new Views.Map({ model : earth, gamePlayer : gamePlayer, game : view.model }));
+      view.model.gameType.maps.each(function(map) {
+        view.maps.push(new Views.Map({ model : map, gamePlayer : gamePlayer, game : view.model }));
+      });
 
       // need the stats
 
@@ -43,12 +44,25 @@ window.JST = window.JST || {};
       }
 
       // prepend on the map
-      view.$el.prepend(view.maps[0].render().el);
+      view.$el.prepend(view.maps[view._currentMap].render().el);
+      // append the stats
+      view.$el.append(view.stats.render().el);
 
       return view;
     },
-    endTurn : function() {
+    endTurn : function() { var view = this;
       window.app.endTurn();
+    },
+    nextMap : function() { var view = this;
+      view._currentMap++;
+      if(view._currentMap >= view.maps.length) {
+        view._currentMap = 0;
+      }
+
+      // TODO  slide these things instead of just removing and adding them :)
+
+      view.$('.bbv-map').remove();
+      view.$el.prepend(view.maps[view._currentMap].render().el);
     }
   });
 
