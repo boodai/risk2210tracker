@@ -13,6 +13,8 @@ window.Views = window.Views || {};
       // Get the collections up and running
       collections.games = new Collections.Games();
       collections.players = new Collections.Players();
+      // load up saved players
+      collections.players.fetch();
 
       // setup current game variable
       app._currentGame = null;
@@ -64,19 +66,17 @@ window.Views = window.Views || {};
       // update years
       app._currentGame.setYears(data.years);
 
-      // TODO update game with info from screen
+      // TODO add some validation to make sure proper number of players
 
-      // cheating by adding some players quickly
-      var players = {
-        'Cory' : 'red',
-        'Nick' : 'green',
-        'Derek' : 'gold'
-      };
-      _.each(players, function(color, name) {
-        var test = new window.Models.Player({ name : name });
-        window.collections.players.add(test);
-        test.save();
-        app._currentGame.addPlayer( test, color );
+      data.players.each(function(player) {
+        var currentPlayer = window.collections.players.get(player);
+        if(!currentPlayer) {
+          // player doesn't exist yet, create them
+          currentPlayer = new window.Models.Player({ id : player.id, name : player.get('name') });
+          window.collections.players.add(currentPlayer);
+          currentPlayer.save();
+        }
+        app._currentGame.addPlayer( currentPlayer, data.playerColors[currentPlayer.id] );
       });
 
       // start the game up
@@ -112,13 +112,9 @@ window.Views = window.Views || {};
       app._currentGame.trigger('newAction');
     },
     undoAction :  function() { var app = this;
-      last = app._currentGame.years.last().turns.last().actions.last();
-      if(last) {
-        last.destroy();
-      }
+      app._currentGame.removeLastAction();
       app._currentGame.save();
       app._currentGame.trigger('newAction');
-      //app._currentGame.years.last().turns.last().actions.remove(last);
     },
     endTurn : function() { var app = this;
       // check if turns all used up this year

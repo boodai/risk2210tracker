@@ -16,23 +16,23 @@ window.Data = window.Data || {};
       colors : {
         red : {
           name : 'Red',
-          rgba : 'rgba(255, 51, 89, 0.8)'
+          rgba : 'rgb(255, 51, 89)'
         },
         black : {
           name : 'Black',
-          rgba : 'rgba(0, 0, 0, 0.8)'
+          rgba : 'rgb(0, 0, 0)'
         },
         gold : {
           name : 'Gold',
-          rgba : 'rgba(233,136,31, 0.8)'
+          rgba : 'rgb(233,136,31)'
         },
         blue : {
           name : 'Blue',
-          rgba : 'rgba(2,102,222, 0.8)'
+          rgba : 'rgb(2,102,222)'
         },
         green : {
           name : 'Green',
-          rgba : 'rgba(2,156,194, 0.8)'
+          rgba : 'rgb(2,156,194)'
         }
       }
     },
@@ -40,6 +40,7 @@ window.Data = window.Data || {};
       earth : {
         id : 'm001',
         name : 'Earth',
+        devastate : 4,
         display : {
           svg : {
             width : 2048,
@@ -595,6 +596,7 @@ window.Data = window.Data || {};
       moon : {
         id : 'm002',
         name : 'Moon',
+        devastate : 0,
         display : {
           svg : {
             width : 1366,

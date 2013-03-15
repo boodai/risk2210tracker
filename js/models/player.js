@@ -11,7 +11,9 @@ window.Collections = window.Collections || {};
     initialize: function(attributes, options) {
       var model = this;
       // lets give it a nice guid id
-      model.set('id', uuid());
+      if(model.id == null) {
+        model.set('id', uuid());
+      }
 
 
     }
@@ -19,7 +21,10 @@ window.Collections = window.Collections || {};
 
   Collections.Players = Backbone.Collection.extend({
     model: window.Models.Player,
-    localStorage: new Backbone.LocalStorage("Risk::Model::Player")
+    localStorage: new Backbone.LocalStorage("Risk::Model::Player"),
+    comparator : function(action) {
+      return action.get("name");
+    }
   });
 
 })(Backbone, window.Models, window.Collections);

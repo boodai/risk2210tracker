@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Boodai's Risk</title>
 
   <!-- Third Party Javascript -->
@@ -12,6 +13,8 @@
   <script type='text/javascript' src='third-party/js/backbone.localStorage-1.1.0/backbone.localStorage-min.js'></script>
   <script type='text/javascript' src='third-party/js/raphaeljs-2.1.0/raphael-min.js'></script>
   <script type='text/javascript' src='third-party/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js'></script>
+  <!--<script type='text/javascript' src='third-party/js/jquery.mobile-1.3.0/jquery.mobile-1.3.0.min.js'></script>-->
+  <script type='text/javascript' src='third-party/js/jquery.ui.touch-punch.min.js'></script>
   <!-- Third Party Stylesheets -->
   <link type="text/css" rel="stylesheet" href="third-party/jquery-ui-1.10.1.custom/css/blitzer/jquery-ui-1.10.1.custom.min.css" media='screen'>
   <link type="text/css" rel="stylesheet" href="third-party/css/normalize.css" media='screen'>
@@ -42,6 +45,10 @@
   <script type='text/javascript' src='js/views/stats.js'></script>
   <script type='text/javascript' src='js/views/map.js'></script>
   <script type='text/javascript' src='js/views/end-game.js'></script>
+  <!-- Backbone Views (Partials) -->
+  <script type='text/javascript' src='js/views/partials/setup/available-players.js'></script>
+  <script type='text/javascript' src='js/views/partials/setup/selected-players.js'></script>
+
 
   <!-- The App -->
   <script type='text/javascript' src='js/app.js'></script>
@@ -58,8 +65,13 @@
         overflow: hidden;
         height: 768px;
     }
+    .bbv-stats div {
+      float:left;
+      margin-left:40px;
+    }
     .bbv-map.earth {
       background-color : #004276;
+      background: url(img/water.jpg);
     }
     .bbv-map.moon {
       background-color : #000000
@@ -77,8 +89,8 @@
     }
     .bbv-turn > .controls {
       position: absolute;
-      top: 746px;
-      right: 10px;
+      top: 695px;
+      left: 800px;
     }
     #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
     #sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
@@ -120,10 +132,15 @@
     </select>
     <br>
     players<br>
+    <div class='available-players-holder'><button class="btn select-player">select</button></div>
+    <div class='new-player-holder'><input type="text" id="new_player"> <button class="btn add-player">add</button></div>
+
+
     <hr>
-    here would be where you would add players, select thier colors, etc
+    here would be where you would add players, select their colors, etc
+    <div class='selected-players-holder'></div>
     <br>
-    <button class="btn">Start Game</button>
+    <button class="btn start-game" style="display:none;">Start Game</button>
 
   </script>
 
@@ -134,7 +151,7 @@
     <br>
     player turn order<br>
     <hr>
-    <ul id="sortable">
+    <ul data-role="listview" id="sortable">
       <@ _.each(players, function(data, id) { @>
         <li class="ui-state-default" data-id="<@= id @>" style="background:<@= data.color @>"><@= data.name @></li>
       <@ }); @>
@@ -152,17 +169,21 @@
   </script>
 
   <script type="text/template" id="stats" class="template">
-    year : <@= year @><br>
-    player : <@= player @><br>
-    territories : <@= territories @><br>
-    mods : <@= mods @><br>
-    energy : <@= energy @><br>
+    <div>
+      year : <@= year @><br>
+      player : <@= player @><br>
+    </div>
+    <div>
+      territories : <@= territories @><br>
+      mods : <@= mods @><br>
+      energy : <@= energy @><br>
+
+    </div>
   </script>
 
   <script type="text/template" id="map" class="template">
     <div class="controls">
       <button class="btn undo">undo</button>
-      <button class="btn clear">clear</button>
     </div>
   </script>
 

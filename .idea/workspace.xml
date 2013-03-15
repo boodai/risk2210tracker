@@ -2,30 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ee47731-6b6c-49de-8f36-9136c4a080e9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/third-party/js/backbone.localStorage-1.1.0/backbone.localStorage-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/views/stats.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/third-party/js/backbone.localStorage/backbone.localStorage-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/third-party/js/backbone.localStorage/backbone.localStorage.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/water.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/views/add-player.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/views/partials/setup/available-players.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/third-party/js/jquery.mobile-1.3.0/jquery.mobile-1.3.0.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/third-party/js/jquery.ui.touch-punch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/views/partials/setup/selected-players.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/action.js" afterPath="$PROJECT_DIR$/js/models/action.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/game-player.js" afterPath="$PROJECT_DIR$/js/models/game-player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/game-setup.js" afterPath="$PROJECT_DIR$/js/views/game-setup.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/game.js" afterPath="$PROJECT_DIR$/js/models/game.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/map.js" afterPath="$PROJECT_DIR$/js/views/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/player.js" afterPath="$PROJECT_DIR$/js/models/player.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/risk.html" afterPath="$PROJECT_DIR$/risk.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec.html" afterPath="$PROJECT_DIR$/spec.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/turn.js" afterPath="$PROJECT_DIR$/js/models/turn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/views/turn.js" afterPath="$PROJECT_DIR$/js/views/turn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/data/risk2210.js" afterPath="$PROJECT_DIR$/js/data/risk2210.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/models/year.js" afterPath="$PROJECT_DIR$/js/models/year.js" />
     </list>
     <ignored path="Risk.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361406421627" ignored="false" />
+    <file path="/Dummy.txt" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363316451413" ignored="false" />
     <file path="/game-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361220738686" ignored="false" />
     <file path="/Misc.txt" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360302283144" ignored="false" />
-    <file path="/game.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361398566951" ignored="false" />
+    <file path="/game.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363289475917" ignored="false" />
     <file path="/game-type.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360303508994" ignored="false" />
     <file path="/game-type-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1360303607954" ignored="false" />
     <file path="/map.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361392420176" ignored="false" />
@@ -39,35 +37,35 @@
     <file path="/turn-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361071126557" ignored="false" />
     <file path="/action.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361073453905" ignored="false" />
     <file path="/action-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361090293541" ignored="false" />
-    <file path="/risk.html" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361396904683" ignored="false" />
-    <file path="/app.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361397754958" ignored="false" />
+    <file path="/risk.html" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1362970058716" ignored="false" />
+    <file path="/app.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363288841532" ignored="false" />
     <file path="/start.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361140930769" ignored="false" />
-    <file path="/game-setup.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361220957483" ignored="false" />
+    <file path="/game-setup.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363288376407" ignored="false" />
     <file path="/app-spec.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361211413302" ignored="false" />
     <file path="/turn-order.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361235726984" ignored="false" />
-    <file path="/a.dummy" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361384544709" ignored="false" />
+    <file path="/a.dummy" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363289069744" ignored="false" />
     <file path="/board.html" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361230150438" ignored="false" />
     <file path="/rapheal.html" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361230205624" ignored="false" />
     <file path="/end-game.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361236521605" ignored="false" />
-    <file path="/risk2210.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361346424816" ignored="false" />
-    <file path="$PROJECT_DIR$/../mellmo-git/web-server/lib/roambi/flow/flow_publisher.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361394698101" ignored="false" />
-    <file path="/flow_publisher.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361315706122" ignored="false" />
-    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/flow/flow_publisher_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361394698101" ignored="false" />
-    <file path="/flow_publisher_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361315858017" ignored="false" />
+    <file path="/risk2210.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363289053939" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/lib/roambi/flow/flow_publisher.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363220773195" ignored="false" />
+    <file path="/flow_publisher.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363205317715" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/flow/flow_publisher_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1362081475616" ignored="false" />
+    <file path="/flow_publisher_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1362081473732" ignored="false" />
     <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-data.git/lib/model/roambiflow/job.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361305069285" ignored="false" />
     <file path="/job.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361305059344" ignored="false" />
     <file path="/a.html" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361307797809" ignored="false" />
-    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/support/flow_helper.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361382177827" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/support/flow_helper.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1362080084261" ignored="false" />
     <file path="/flow_helper.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361316163841" ignored="false" />
-    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/decorators/flow/issue_rbf_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361394698100" ignored="false" />
-    <file path="/issue_rbf_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361392553261" ignored="false" />
-    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/decorators/flow/issue_rbf_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361394698101" ignored="false" />
-    <file path="/issue_rbf_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361317090893" ignored="false" />
-    <file path="$PROJECT_DIR$/../mellmo-git/web-server/config/routes.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361382177827" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/decorators/flow/issue_rbf_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361831318673" ignored="false" />
+    <file path="/issue_rbf_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361828596768" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/decorators/flow/issue_rbf_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1362073149071" ignored="false" />
+    <file path="/issue_rbf_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1362073149071" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/config/routes.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363219622916" ignored="false" />
     <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-data.git/lib/model/roambiflow/media.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361391276064" ignored="false" />
     <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-data.git/spec/roambi-data/model/roambiflow/media_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361391432284" ignored="false" />
-    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/decorators/flow/page_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361388776368" ignored="false" />
-    <file path="/page_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361387554093" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/decorators/flow/page_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363219622916" ignored="false" />
+    <file path="/page_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363202625958" ignored="false" />
     <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/decorators/flow/page_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361388836009" ignored="false" />
     <file path="/page_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361388836009" ignored="false" />
     <file path="/block.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361388015752" ignored="false" />
@@ -77,9 +75,134 @@
     <file path="/block_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361388924334" ignored="false" />
     <file path="/media.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361391234948" ignored="false" />
     <file path="/media_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361391429684" ignored="false" />
-    <file path="/player.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361394104797" ignored="false" />
+    <file path="/player.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363288872732" ignored="false" />
     <file path="/stats.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361397626471" ignored="false" />
     <file path="/block_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361397069041" ignored="false" />
+    <file path="$PROJECT_DIR$/../svn/roambi-server/roambi-es/src/main/jruby/app/helpers/roambook/media_management.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361840443413" ignored="false" />
+    <file path="/media_management.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361840217619" ignored="false" />
+    <file path="/flow.yml" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361918375977" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-i18n.git/i18n/en/flow.yml" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361991118693" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/bundler/gems/mongomapper-f21862e2d60e/lib/mongo_mapper/extensions/hash.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503020" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/nokogiri-1.5.6-java/lib/nokogiri/xml/node.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503020" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/actionpack-3.2.12/lib/action_controller/record_identifier.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503020" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rspec-expectations-2.12.1/lib/rspec/matchers/built_in/have.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503020" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/nokogiri-1.5.6-java/lib/nokogiri/xml/node_set.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503020" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/railties-3.2.12/lib/rails.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503020" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/warbler-1.3.6/lib/warbler.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503020" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/activesupport-3.2.12/lib/active_support/core_ext/module/introspection.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503020" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/aws-sdk-1.8.1.2/lib/aws/ec2/attachment_collection.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503020" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rspec-core-2.12.2/lib/rspec/core/shared_example_group.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503020" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/dm-validations-1.2.0/lib/dm-validations/validation_errors.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503020" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rspec-mocks-2.12.1/lib/rspec/mocks/any_instance.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503020" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rake-0.9.6/lib/rake/contrib/compositepublisher.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503020" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/mongo-1.8.2/lib/mongo/cursor.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503021" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/activerecord-3.2.12/lib/active_record/connection_adapters/postgresql_adapter.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503021" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/activesupport-3.2.12/lib/active_support/concern.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503021" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/dm-validations-1.2.0/lib/dm-validations/support/ordered_hash.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503021" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/aws-sdk-1.8.1.2/lib/aws/auto_scaling/activity.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503021" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/fakefs-0.4.2/lib/fakefs/fake/file.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503021" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/bson-1.8.2-java/lib/bson/ordered_hash.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503021" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/activesupport-3.2.12/lib/active_support/dependencies.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503021" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/pry-0.9.11.4-java/lib/pry/pager.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503021" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/actionpack-3.2.12/lib/action_dispatch/testing/test_process.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503021" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rspec-mocks-2.12.1/lib/rspec/mocks/methods.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503021" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/diff-lcs-1.1.3/lib/diff/lcs/hunk.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503021" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/builder-3.0.4/lib/blankslate.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503021" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/i18n-0.6.1/lib/i18n.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503022" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rack-1.4.5/lib/rack/utils.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503022" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/bundler/gems/dm-core-1acfd6df7c58/lib/dm-core/backwards.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503022" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/i18n-0.6.1/lib/i18n/exceptions.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503022" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/r18n-core-1.1.3/lib/r18n-core/locale.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503022" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rspec-expectations-2.12.1/lib/rspec/matchers.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503022" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rspec-expectations-2.12.1/lib/rspec/expectations/expectation_target.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503022" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/bundler/gems/dm-core-1acfd6df7c58/lib/dm-core/query.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503022" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/backports-2.7.1/lib/backports/rails/kernel.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503022" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/activesupport-3.2.12/lib/active_support/notifications.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503022" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rdoc-3.12.1/lib/rdoc/code_object.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503023" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/backports-2.7.1/lib/backports/1.8.7/enumerable.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503023" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/uuidtools-2.1.3/lib/uuidtools.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503023" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/nokogiri-1.5.6-java/lib/nokogiri/html/document.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503024" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/method_source-0.8.1/lib/method_source.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503024" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/bundler/gems/plucky-ff84a65f077d/lib/plucky/query.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503024" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rdoc-3.12.1/lib/rdoc/context.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/RubyInline-3.9.0/lib/inline.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/ruby-openid-2.2.2/lib/openid/server.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/arel-3.0.2/lib/arel/visitors/dot.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rspec-expectations-2.12.1/lib/rspec/matchers/dsl.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/extlib-0.9.16/lib/extlib/lazy_array.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/directory_watcher-1.4.1/lib/directory_watcher/em_scanner.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/actionpack-3.2.12/lib/abstract_controller/translation.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rspec-core-2.12.2/lib/rspec/core/backward_compatibility.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/encryptor-1.1.3/lib/encryptor/string.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rake-0.9.6/lib/rake/file_utils_ext.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/actionpack-3.2.12/lib/action_controller/base.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/actionpack-3.2.12/lib/action_view/helpers/number_helper.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-data.git/lib/model/user/palette.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/ruby-debug-0.10.4/cli/ruby-debug/processor.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rspec-core-2.12.2/lib/rspec/core/example_group.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503025" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/activesupport-3.2.12/lib/active_support/testing/declarative.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503026" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/activeresource-3.2.12/lib/active_resource/base.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503026" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/ZenTest-4.8.3/lib/autotest.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503026" ignored="false" />
+    <file path="$USER_HOME$/.rvm/gems/jruby-1.6.8@yeti/gems/rdoc-3.12.1/lib/rdoc/markup/attribute_manager.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361919503026" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/server" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361920015433" ignored="false" />
+    <file path="/003_setup_roambi_data.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361920039984" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/config/initializers/003_setup_roambi_data.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361922205385" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/lib/roambi/network_resource_client.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361986884169" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/controllers/flow/media_controller_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361986881232" ignored="false" />
+    <file path="/media_controller_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361926646318" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-i18n.git/lib/roambi-i18n.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1361991118693" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/controllers/flow/issues_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363299952180" ignored="false" />
+    <file path="/issues_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363297903600" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-data.git/lib/model/portal/clients2/job_progress.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363296806689" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/lib/roambi/data_services/portal_service.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1362073062064" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-data.git/lib/data_services/api_manager.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1362073062064" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/lib/roambi/data_services/action_post_processor.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1362073062064" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/lib/roambi/data_services/rfs_publish_post_action.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363219622916" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-data.git/lib/roambi-data.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1362073062064" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-data.git/lib/model/roambiflow/issue.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1362078050340" ignored="false" />
+    <file path="/issue.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1362073808747" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-data.git/lib/db.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1362081299211" ignored="false" />
+    <file path="/routes.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363118228879" ignored="false" />
+    <file path="/available-player.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1362965403648" ignored="false" />
+    <file path="/selected-players.js" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363133677237" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/controllers/api/flow/audience_connection_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363201328485" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/controllers/api/flow/audience_connection_controller_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363201328470" ignored="false" />
+    <file path="/audience_connection_controller_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363108827294" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/controllers/api/flow/flow_api_controller_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363111267836" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/controllers/api/flow/flow_api_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363201328486" ignored="false" />
+    <file path="/flow_api_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363125190328" ignored="false" />
+    <file path="/flow_api_controller_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363110902915" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/controllers/flow/concerns/pdf_conversion.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363116978207" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/controllers/api/source_files_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363116978207" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/controllers/flow/flow_controller_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363121269214" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/controllers/flow/flow_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363116978207" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/lib/roambi/data_services/data_service.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363116978207" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/controllers/flow/client_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363117570745" ignored="false" />
+    <file path="/client_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363117316708" ignored="false" />
+    <file path="/flow_controller_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363121145234" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/controllers/api/flow/publications_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363201328470" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/controllers/api/flow/concerns/params_validation.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363201328486" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/controllers/api/flow/issues_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363220510960" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/controllers/api/flow/rbis_controller_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363201328486" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/controllers/api/flow/issues_controller_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363201328486" ignored="false" />
+    <file path="/issues_controller_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363125554378" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/lib/roambi/providers/rfs_provider.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363199323748" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/lib/roambi/data_services/document_rfs_content_manager.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363199323748" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/decorators/flow/issue_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363219887298" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/spec/decorators/flow/issue_decorator_spec.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363219611369" ignored="false" />
+    <file path="/issue_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363219866827" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/decorators/flow/publication_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363219914483" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/decorators/flow/flow_decorator.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363219923653" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/controllers/api/resource_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363302766549" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/ruby-gems/roambi/roambi-data.git/lib/model/rfs/analytics_file.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363296806689" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/controllers/flow/publications_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363299952180" ignored="false" />
+    <file path="/publications_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363298631393" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/helpers/authentication.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363298207926" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/controllers/flow/media_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363302766549" ignored="false" />
+    <file path="/media_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363302262142" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/lib/roambi/data_service_support.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363302766549" ignored="false" />
+    <file path="$PROJECT_DIR$/../mellmo-git/web-server/app/controllers/flow/stories_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363307056686" ignored="false" />
+    <file path="/stories_controller.rb" changelist="6ee47731-6b6c-49de-8f36-9136c4a080e9" time="1363307055002" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,81 +216,117 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="turn.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/views/turn.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="25" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stats.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/views/stats.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="49" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="continent.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/models/data/continent.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="12" selection-start="285" selection-end="290" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/models/game.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="199" column="23" selection-start="6781" selection-end="6781" vertical-scroll-proportion="0.9227053">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="risk.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/risk.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="23" selection-start="5674" selection-end="5674" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/views/map.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="29" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="117" column="7" selection-start="3719" selection-end="3833" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spec.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.38775513">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="game-type.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/models/data/game-type.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="risk2210.js" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/data/risk2210.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="34" column="30" selection-start="673" selection-end="673" vertical-scroll-proportion="0.04347826">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="game-setup.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/views/game-setup.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="49" column="45" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="selected-players.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/views/partials/setup/selected-players.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="69" column="0" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="game-player.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/models/game-player.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="12" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="risk.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/risk.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="142" column="47" selection-start="5653" selection-end="5653" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="60" column="0" selection-start="2130" selection-end="2130" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="spec.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/spec.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="43" column="0" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="73" column="36" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="player.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/models/player.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="14" column="32" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="game.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/models/game.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="139" column="8" selection-start="4713" selection-end="4713" vertical-scroll-proportion="0.040920716">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -185,21 +344,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/trials/board_ipad.psd.svg" />
-        <option value="$PROJECT_DIR$/trials/ccc.svg" />
-        <option value="$PROJECT_DIR$/js/data/risk2210.js" />
-        <option value="$PROJECT_DIR$/third-party/js/backbone.localStorage/backbone.localStorage-min.js" />
-        <option value="$PROJECT_DIR$/js/views/map.js" />
         <option value="$PROJECT_DIR$/js/models/game-player.js" />
         <option value="$PROJECT_DIR$/js/models/action.js" />
-        <option value="$PROJECT_DIR$/js/models/player.js" />
         <option value="$PROJECT_DIR$/js/models/year.js" />
         <option value="$PROJECT_DIR$/js/models/turn.js" />
         <option value="$PROJECT_DIR$/js/views/turn.js" />
         <option value="$PROJECT_DIR$/spec.html" />
-        <option value="$PROJECT_DIR$/risk.html" />
         <option value="$PROJECT_DIR$/js/views/stats.js" />
+        <option value="$PROJECT_DIR$/js/views/setup/available-player.js" />
+        <option value="$PROJECT_DIR$/js/views/partials/setup/available-player.js" />
+        <option value="$PROJECT_DIR$/risk.html" />
+        <option value="$PROJECT_DIR$/js/views/partials/setup/selected-players.js" />
+        <option value="$PROJECT_DIR$/js/views/game-setup.js" />
+        <option value="$PROJECT_DIR$/js/models/player.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/js/data/risk2210.js" />
         <option value="$PROJECT_DIR$/js/models/game.js" />
       </list>
     </option>
@@ -235,6 +394,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -367,6 +527,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="setup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Risk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Risk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -413,7 +599,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -441,8 +626,20 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="dbd86de4-ffd9-407a-a416-1b8e4a952e1c">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js/views/partials" />
       <recent name="$PROJECT_DIR$/js/models" />
       <recent name="$PROJECT_DIR$/third-party/js/jasmine-1.3.1/demo" />
       <recent name="$PROJECT_DIR$/third-party/js" />
@@ -654,11 +851,11 @@
     <frame x="0" y="22" width="1630" height="1028" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3253638" sideWeight="0.49968886" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.55093557" sideWeight="0.49968886" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952183" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20161793" sideWeight="0.6746362" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13130055" sideWeight="0.44906446" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32604167" sideWeight="0.4959552" order="7" side_tool="true" content_ui="tabs" />
@@ -749,9 +946,14 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/third-party/js/backbone.localStorage-1.1.0/backbone.localStorage-min.js">
+    <entry file="file://$PROJECT_DIR$/js/models/data/continent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="1" selection-start="111" selection-end="111" vertical-scroll-proportion="0.087051146" />
+        <state line="9" column="12" selection-start="285" selection-end="290" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="29" selection-start="2894" selection-end="2894" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/models/data/map.js">
@@ -759,43 +961,14 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/year.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="519" selection-end="674" vertical-scroll-proportion="0.3316062">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/turn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="20" selection-start="632" selection-end="632" vertical-scroll-proportion="0.36476684" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="375" selection-end="375" vertical-scroll-proportion="0.24870466" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/game-player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.19896373" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/models/action.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.6134715" />
+        <state line="35" column="0" selection-start="1013" selection-end="1089" vertical-scroll-proportion="0.5995717" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/turn-order.js">
+    <entry file="file://$PROJECT_DIR$/js/views/partials/setup/available-players.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="1629" vertical-scroll-proportion="-0.016580312" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/turn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="25" selection-start="1433" selection-end="1433" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="11" column="33" selection-start="399" selection-end="416" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec.html">
@@ -807,42 +980,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/risk.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="23" selection-start="5674" selection-end="5674" vertical-scroll-proportion="0.0">
+        <state line="142" column="47" selection-start="5653" selection-end="5653" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/models/data/continent.js">
+    <entry file="file://$PROJECT_DIR$/js/models/game-player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="12" selection-start="285" selection-end="290" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/stats.js">
+    <entry file="file://$PROJECT_DIR$/js/additional.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="49" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.0">
+        <state line="45" column="14" selection-start="1474" selection-end="1474" vertical-scroll-proportion="0.77087796" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/views/partials/setup/selected-players.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="0" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/views/map.js">
+    <entry file="file://$PROJECT_DIR$/js/views/game-setup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="29" selection-start="2353" selection-end="2353" vertical-scroll-proportion="0.0">
+        <state line="49" column="45" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="32" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="7" selection-start="3719" selection-end="3833" vertical-scroll-proportion="0.0">
+        <state line="73" column="36" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/models/data/game-type.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/models/game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="23" selection-start="6781" selection-end="6781" vertical-scroll-proportion="0.9227053">
+        <state line="139" column="8" selection-start="4713" selection-end="4713" vertical-scroll-proportion="0.040920716">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/data/risk2210.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="30" selection-start="673" selection-end="673" vertical-scroll-proportion="0.04347826">
           <folding />
         </state>
       </provider>

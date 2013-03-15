@@ -9,7 +9,8 @@ window.Collections = window.Collections || {};
       'gameTypeId' : null,
       'numYears' : null,
       'initialBoard' : null,
-      'createdAt' : null
+      'createdAt' : null,
+      'devastatedKey' : 666
     },
     initialize: function(attributes, options) { var game = this;
       attributes || (attributes = {}); options || (options = {});
@@ -135,6 +136,9 @@ window.Collections = window.Collections || {};
       // randomize the array
       fisherYates(landTerritories);
 
+      // devastate
+      //for(var d=0;z < game.)
+
       // Territories per player
       var numEach = parseInt(landTerritories.length/game.gamePlayers.length);
 
@@ -186,24 +190,25 @@ window.Collections = window.Collections || {};
       // add the turn
       year.turns.add({ number : turnNumber, playerId : playerId });
 
+      // add a default action to keep the state for this turn
+      var actions = year.turns.last().actions;
+      actions.add({ territoryId : null, playerId : null, number : 0, boardState : game.board });
+
       return game;
     },
     addAction : function(territoryId, playerId) { var game = this;
       var actions = game.years.last().turns.last().actions;
-      actions.add({ territoryId : territoryId, playerId : playerId, number : actions.length+1 });
+      actions.add({ territoryId : territoryId, playerId : playerId, number : actions.length+2, boardState : game.board });
       game.board[territoryId] = playerId;
     },
     removeLastAction : function() { var game = this;
-      last = game.years.last().turns.last().actions.last();
-      if(last) {
+      var last = game.years.last().turns.last().actions.last();
+      if(last && last.get('number') > 0) {
         last.destroy();
-        // update board
-
-        // TODO switch to saving the state on actions
+        // update board to last actions board
+        var newLast = game.years.last().turns.last().actions.last();
+        game.board = newLast.get('boardState');
       }
-      var actions = game.years.last().turns.last().actions;
-      actions.add({ territoryId : territoryId, playerId : playerId, number : actions.length+1 });
-      game.board[territoryId] = playerId;
     }
   });
 

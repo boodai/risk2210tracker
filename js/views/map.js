@@ -11,7 +11,6 @@ window.JST = window.JST || {};
 
     events: {
       'click .btn.undo' : 'undoAction',
-      'click .btn.clear' : 'clearToggle'
     },
     initialize: function(options) {
       var view = this;
@@ -23,6 +22,7 @@ window.JST = window.JST || {};
       view.history = [];
     },
     render: function() { var view = this;
+      var color;
 
       // TODO  fix this stupidity so specs work better
       if(view._template != undefined ) {
@@ -46,20 +46,35 @@ window.JST = window.JST || {};
             //view.labelPath(paper, item, territory.get('name'));
             if(view.game.board[territory.id] != null) {
               // already owned
-              item.attr({ fill : view.game.gamePlayers.where({playerId : view.game.board[territory.id]})[0].get('color')  });
+              var color = view.model.gameType.get('players').colors[view.game.gamePlayers.where({playerId : view.game.board[territory.id]})[0].get('color')]['rgba'];
+              item.attr({ fill :  color });
             } else {
               item.attr({ fill : '#FFFFFF' });
+
             }
 
             item.data('id', territory.id);
+
+
             item.click(function() {
               // add to history
               view.history.push({ territoryId : territory.id, playerId : view.game.board[territory.id] })
 
               // Fill with characters color
-              this.attr("fill", view.gamePlayer.get('color'));
+              var color = view.model.gameType.get('players').colors[view.gamePlayer.get('color')]['rgba'];
+              this.attr("fill", color);
               // add action
               window.app.newAction(territory.id, view.gamePlayer.get('playerId'));
+            });
+
+            item.dblclick(function() {
+              // add to history
+              view.history.push({ territoryId : territory.id, playerId : view.game.board[territory.id] })
+
+              // Fill with characters color
+              this.attr("fill", '#FFFFFF');
+              // add action
+              window.app.newAction(territory.id, null);
             });
           }
         });
@@ -80,24 +95,22 @@ window.JST = window.JST || {};
     },
     undoAction : function() { var view = this;
       var last = view.history.pop();
-      // get paper id
-      var paperId = view.mapToPaper[last.territoryId];
-      // get paper item
-      var item = view.paper.getById(paperId);
-      if(last.playerId != null) {
-        var color = view.game.gamePlayers.where({playerId : last.playerId})[0].get('color');
-      } else {
-        var color = '#FFFFFF';
+      if(last) {
+        // get paper id
+        var paperId = view.mapToPaper[last.territoryId];
+        // get paper item
+        var item = view.paper.getById(paperId);
+        if(last.playerId != null) {
+          var color = view.game.gamePlayers.where({playerId : last.playerId})[0].get('color');
+        } else {
+          var color = '#FFFFFF';
+        }
+
+        item.attr({ fill : color });
+
+        // remove the action
+        window.app.undoAction();
       }
-
-      item.attr({ fill : color });
-
-      // remove the action
-      window.app.undoAction();
-      // update the map
-
-    },
-    clearToggle : function() {
     }
   });
 

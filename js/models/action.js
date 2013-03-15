@@ -9,6 +9,7 @@ window.Collections = window.Collections || {};
       'turnId' : null,
       'territoryId' : null,
       'playerId' : null,
+      'boardState' : null,
       'number' : null
     },
     initialize: function(attributes, options) {
