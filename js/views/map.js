@@ -10,7 +10,7 @@ window.JST = window.JST || {};
     className: function() {return 'bbv-map '+this.model.id},
 
     events: {
-      'click .btn.undo' : 'undoAction',
+      'click .btn.undo' : 'undoAction'
     },
     initialize: function(options) {
       var view = this;
@@ -19,7 +19,9 @@ window.JST = window.JST || {};
       view.gamePlayer = options.gamePlayer || null;
       view._template = window.JST['map'];
       view.mapToPaper = {};
-      view.history = [];
+
+      // update the map whenever a new action is taken
+      view.game.on('newAction', view.updateTerritories, this);
     },
     render: function() { var view = this;
       var color;
@@ -89,53 +91,44 @@ window.JST = window.JST || {};
         terrSVG.attr({ fill : '#FFFFFF' });
       }
     },
+    updateTerritories :  function() { var view = this;
+      // if this gets to slow, can always keep track of the last board and then compare to see if need to update at all
+
+      var terrSVG, territory, paperId;
+      // loop through board and update
+      _.each(view.game.board, function(playerId, territoryId) {
+        paperId = view.mapToPaper[territoryId];
+        if(paperId) {
+          // territory is on this map
+          terrSVG = view.paper.getById( paperId );
+          territory = window.collections.data.territories.get(territoryId);
+          view.colorTerritory(territory, terrSVG);
+        }
+      });
+
+    },
     territoryClick : function(territory, terrSVG) { var view = this;
+      // change owner of the territory
       // Check if devastated or if current player already owns
       if( view.game.board[territory.id] != view.game.get('devastatedKey')
           && view.game.board[territory.id] != view.gamePlayer.get('playerId') ) {
 
-        // add to history
-        view.history.push({ territoryId : territory.id, playerId : view.game.board[territory.id] });
-
         // Add the action
         window.app.newAction(territory.id, view.gamePlayer.get('playerId'));
-
-        view.colorTerritory(territory, terrSVG);
       }
     },
     territoryDoubleClick : function(territory, terrSVG) { var view = this;
+      // Clear the territory
       if( view.game.board[territory.id] != view.game.get('devastatedKey') ) {
         // Not a devastated territory
 
-        // add to history
-        view.history.push({ territoryId : territory.id, playerId : view.game.board[territory.id] })
-
         // add action
         window.app.newAction(territory.id, null);
-
-        view.colorTerritory(territory, terrSVG);
       }
     },
     undoAction : function() { var view = this;
-      var lastActionTerrId = window.app.lastAction().get('territoryId');
-
-      var last = view.history.pop();
-      if(last) {
-        // get paper id
-        var paperId = view.mapToPaper[last.territoryId];
-        // get paper item
-        var item = view.paper.getById(paperId);
-        if(last.playerId != null) {
-          var color = view.game.gamePlayers.where({playerId : last.playerId})[0].get('color');
-        } else {
-          var color = '#FFFFFF';
-        }
-
-        item.attr({ fill : color });
-
-        // remove the action
-        window.app.undoAction();
-      }
+      // remove the last action
+      window.app.undoAction();
     }
   });
 
