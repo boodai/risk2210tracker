@@ -22,6 +22,7 @@ window.Collections = window.Collections || {};
         var mapModel = new Models.Data.Map({ id : mapKey,
                                               name : map.name,
                                               display : map.display,
+                                              devastate : map.devastate,
                                               gameTypeId : attributes.id }
                                             , { parent : model, continents : map.continents });
         window.collections.data.maps.add(mapModel);

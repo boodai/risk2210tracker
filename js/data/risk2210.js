@@ -57,7 +57,8 @@ window.Data = window.Data || {};
             name : 'North America',
             bonus : 5,
             color : '#bcbc3a',
-            type : 'land',
+            type : 'Land',
+            isStartingContinent : true,
             territories : {
               northwesternOilEmpire : {
                 id : 't001',
@@ -138,7 +139,8 @@ window.Data = window.Data || {};
             name : 'South America',
             bonus : 2,
             color : '#a35d3b',
-            type : 'land',
+            type : 'Land',
+            isStartingContinent : true,
             territories : {
               nuevoTimoto : {
                 id : 't010',
@@ -179,7 +181,8 @@ window.Data = window.Data || {};
             name : 'Europe',
             bonus : 5,
             color : '#7f4eaa',
-            type : 'land',
+            type : 'Land',
+            isStartingContinent : true,
             territories : {
               icelandGrc : {
                 id : 't014',
@@ -244,7 +247,8 @@ window.Data = window.Data || {};
             name : 'Africa',
             bonus : 3,
             color : '#bed6da',
-            type : 'land',
+            type : 'Land',
+            isStartingContinent : true,
             territories : {
               saharanEmpire : {
                 id : 't021',
@@ -301,7 +305,8 @@ window.Data = window.Data || {};
             name : 'Asia',
             bonus : 7,
             color : '#95b08f',
-            type : 'land',
+            type : 'Land',
+            isStartingContinent : true,
             territories : {
               enclaveOfTheBear : {
                 id : 't027',
@@ -406,7 +411,8 @@ window.Data = window.Data || {};
             name : 'Australia',
             bonus : 2,
             color : '#db6c73',
-            type : 'land',
+            type : 'Land',
+            isStartingContinent : true,
             territories : {
               javaCartel : {
                 id : 't039',
@@ -447,7 +453,8 @@ window.Data = window.Data || {};
             name : 'US Pacific',
             bonus : 2,
             color : '#86c8de',
-            type : 'water',
+            type : 'Water',
+            isStartingContinent : false,
             territories : {
               poseidon : {
                 id : 't043',
@@ -480,7 +487,8 @@ window.Data = window.Data || {};
             name : 'North Atlantic',
             bonus : 2,
             color : '#f73b30',
-            type : 'water',
+            type : 'Water',
+            isStartingContinent : false,
             territories : {
               newYork : {
                 id : 't046',
@@ -513,7 +521,8 @@ window.Data = window.Data || {};
             name : 'South Atlantic',
             bonus : 1,
             color : '#6abf26',
-            type : 'water',
+            type : 'Water',
+            isStartingContinent : false,
             territories : {
               neoPaulo : {
                 id : 't049',
@@ -538,7 +547,8 @@ window.Data = window.Data || {};
             name : 'Indian',
             bonus : 2,
             color : '#d45c1d',
-            type : 'water',
+            type : 'Water',
+            isStartingContinent : false,
             territories : {
               southCeylon : {
                 id : 't051',
@@ -571,7 +581,8 @@ window.Data = window.Data || {};
             name : 'Asia Pacific',
             bonus : 1,
             color : '#d2d145',
-            type : 'water',
+            type : 'Water',
+            isStartingContinent : false,
             territories : {
               neoTokyo : {
                 id : 't054',
@@ -613,7 +624,8 @@ window.Data = window.Data || {};
             name : 'Cresinion',
             bonus : 2,
             color : '#b35f45',
-            type : 'space',
+            type : 'Space',
+            isStartingContinent : false,
             territories : {
               bayOfDew : {
                 id : 't056',
@@ -654,7 +666,8 @@ window.Data = window.Data || {};
             name : 'Delphot',
             bonus : 2,
             color : '#6f549b',
-            type : 'space',
+            type : 'Space',
+            isStartingContinent : false,
             territories : {
               aristotle : {
                 id : 't060',
@@ -695,7 +708,8 @@ window.Data = window.Data || {};
             name : 'Sajon',
             bonus : 4,
             color : '#a2c988',
-            type : 'space',
+            type : 'Space',
+            isStartingContinent : false,
             territories : {
               byrgius : {
                 id : 't064',

@@ -129,10 +129,26 @@ describe("Model::Game", function() {
   });
 
   describe(".createBoard() - ", function() {
-    it("creates the board with the right number of territories", function() {
+    beforeEach(function() {
       game.createBoard();
+    });
+
+    it("creates the board", function() {
       expect(exists(game.board)).toEqual(true);
+    });
+
+    it("has the right number of territories", function() {
       expect(Object.keys(game.board).length).toEqual(69);
+    });
+
+    it("has the right number of devastated territories", function() {
+      var devastated = 0;
+      _.each(game.board, function(value,key) {
+        if(value == game.get('devastatedKey')) {
+          devastated++;
+        }
+      });
+      expect(devastated).toEqual(4);
     });
   });
 
@@ -151,9 +167,9 @@ describe("Model::Game", function() {
 
       var numAssignedTerritories = 0;
       _.each(game.board, function(player, key) {
-        if(player) { numAssignedTerritories++; }
+        if(player && player != game.get('devastatedKey')) { numAssignedTerritories++; }
       });
-      expect(numAssignedTerritories).toEqual(42);
+      expect(numAssignedTerritories).toEqual(38);
     });
   });
 

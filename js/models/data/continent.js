@@ -10,7 +10,8 @@ window.Collections = window.Collections || {};
       'bonus' : null,
       'color' : null,
       'type' : null,
-      'mapId' : null
+      'mapId' : null,
+      'isStartingContinent' : null
     },
     //localStorage: new Store(app.storeName + '::Player'),
     initialize: function(attributes, options) {

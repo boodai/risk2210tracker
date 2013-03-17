@@ -36,46 +36,29 @@ window.JST = window.JST || {};
       view.model.continents.each(function(continent) {
         continent.territories.each(function(territory) {
           if( exists(territory.get('display').svg) ) {
-            var item = view.paper.path(territory.get('display').svg);
+            // Create the path
+            var terrSVG = view.paper.path(territory.get('display').svg);
 
-            // update the internal converstion chart
-            view.mapToPaper[territory.id] = item.id;
+            // update the internal conversion chart
+            view.mapToPaper[territory.id] = terrSVG.id;
 
-            item.attr({ stroke : continent.get('color'), cursor : 'pointer', 'stroke-width' : 3 });
+            // Border
+            terrSVG.attr({ stroke : continent.get('color'), cursor : 'pointer', 'stroke-width' : 3 });
+
             // TODO make this work
-            //view.labelPath(paper, item, territory.get('name'));
-            if(view.game.board[territory.id] != null) {
-              // already owned
-              var color = view.model.gameType.get('players').colors[view.game.gamePlayers.where({playerId : view.game.board[territory.id]})[0].get('color')]['rgba'];
-              item.attr({ fill :  color });
-            } else {
-              item.attr({ fill : '#FFFFFF' });
+            //view.labelPath(paper, terrSVG, territory.get('name'));
 
-            }
+            // color the Territory
+            view.colorTerritory(territory, terrSVG);
 
-            item.data('id', territory.id);
+            // Store the territory id on the svg
+            terrSVG.data('id', territory.id);
 
+            // click events
+            terrSVG.click(function() { view.territoryClick(territory,this) });
 
-            item.click(function() {
-              // add to history
-              view.history.push({ territoryId : territory.id, playerId : view.game.board[territory.id] })
+            terrSVG.dblclick(function() {  view.territoryDoubleClick(territory,this) });
 
-              // Fill with characters color
-              var color = view.model.gameType.get('players').colors[view.gamePlayer.get('color')]['rgba'];
-              this.attr("fill", color);
-              // add action
-              window.app.newAction(territory.id, view.gamePlayer.get('playerId'));
-            });
-
-            item.dblclick(function() {
-              // add to history
-              view.history.push({ territoryId : territory.id, playerId : view.game.board[territory.id] })
-
-              // Fill with characters color
-              this.attr("fill", '#FFFFFF');
-              // add action
-              window.app.newAction(territory.id, null);
-            });
           }
         });
       });
@@ -93,7 +76,49 @@ window.JST = window.JST || {};
 //      var textObj = paper.text( bbox.x , bbox.y , text ); //.attr( textattr );
 //      return textObj;
     },
+    colorTerritory : function(territory, terrSVG) { var view = this;
+      if(view.game.board[territory.id] == view.game.get('devastatedKey')) {
+        // devastated territory
+        terrSVG.attr({ fill :  'url(img/devastate-100.png)' });
+      } else if(view.game.board[territory.id] != null) {
+        // already owned
+        var color = view.model.gameType.get('players').colors[view.game.gamePlayers.where({playerId : view.game.board[territory.id]})[0].get('color')]['rgba'];
+        terrSVG.attr({ fill :  color });
+      } else {
+        // not owned
+        terrSVG.attr({ fill : '#FFFFFF' });
+      }
+    },
+    territoryClick : function(territory, terrSVG) { var view = this;
+      // Check if devastated or if current player already owns
+      if( view.game.board[territory.id] != view.game.get('devastatedKey')
+          && view.game.board[territory.id] != view.gamePlayer.get('playerId') ) {
+
+        // add to history
+        view.history.push({ territoryId : territory.id, playerId : view.game.board[territory.id] });
+
+        // Add the action
+        window.app.newAction(territory.id, view.gamePlayer.get('playerId'));
+
+        view.colorTerritory(territory, terrSVG);
+      }
+    },
+    territoryDoubleClick : function(territory, terrSVG) { var view = this;
+      if( view.game.board[territory.id] != view.game.get('devastatedKey') ) {
+        // Not a devastated territory
+
+        // add to history
+        view.history.push({ territoryId : territory.id, playerId : view.game.board[territory.id] })
+
+        // add action
+        window.app.newAction(territory.id, null);
+
+        view.colorTerritory(territory, terrSVG);
+      }
+    },
     undoAction : function() { var view = this;
+      var lastActionTerrId = window.app.lastAction().get('territoryId');
+
       var last = view.history.pop();
       if(last) {
         // get paper id

@@ -110,49 +110,65 @@ window.Collections = window.Collections || {};
     },
     createBoard: function() {
       var game = this;
+      var territoriesForDevastation = [];
 
       game.board = {};
 
       game.gameType.maps.each(function(map) {
+        territoriesForDevastation = [];
+
         map.continents.each(function(continent) {
           continent.territories.each(function(territory) {
             game.board[territory.id] = null;
+
+            if(map.get('devastate') > 0 && continent.get('isStartingContinent')) {
+              territoriesForDevastation.push(territory.id)
+            }
           });
         });
+
+        if(map.get('devastate') > 0) {
+          // need to devastate some territories, randomize them
+          fisherYates(territoriesForDevastation);
+          for(var x = 0; x < map.get('devastate'); x++ ) {
+            game.board[territoriesForDevastation[x]] = game.get('devastatedKey');
+          }
+        }
       });
     },
     // randomize board
     randomizeBoard: function() {
-      var game = this, landTerritories = [], territory;
+      var game = this, startingTerritories = [], territory;
 
-      // get all land territories
-      _.each(game.board, function(owner, key) {
+      // get all starting continent territories per map
+      _.each(game.board, function(value, key) {
         territory = window.collections.data.territories.get(key);
-        if(territory.continent.get('type') ==  'land') {
-          landTerritories.push(key);
+        if(territory.continent.get('isStartingContinent') ) {
+          if( value != game.get('devastatedKey') ) {
+            startingTerritories.push(key);
+          }
         }
       });
 
       // randomize the array
-      fisherYates(landTerritories);
+      fisherYates(startingTerritories);
 
-      // devastate
-      //for(var d=0;z < game.)
+      console.log(startingTerritories.length);
 
       // Territories per player
-      var numEach = parseInt(landTerritories.length/game.gamePlayers.length);
+      var numEach = parseInt(startingTerritories.length/game.gamePlayers.length);
 
       game.gamePlayers.each(function(player) {
         for(var y=0; y < numEach; y++) {
-          var terrKey =  landTerritories.pop();
+          var terrKey =  startingTerritories.pop();
           game.board[terrKey] = player.get('playerId');
         }
       });
 
       // fill up remainder
-      var remainder = landTerritories.length;
+      var remainder = startingTerritories.length;
       for(var y=0; y < remainder; y++) {
-        var terrKey =  landTerritories.pop();
+        var terrKey =  startingTerritories.pop();
         // random player
         var rand = Math.floor(Math.random()*(game.gamePlayers.length));
         var player = game.gamePlayers.at(rand);

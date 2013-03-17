@@ -9,7 +9,8 @@ window.Collections = window.Collections || {};
       'id' : null,
       'name' : null,
       'display' : null,
-      'gameTypeId' : null
+      'gameTypeId' : null,
+      'devastate' : null
     },
     //localStorage: new Store(app.storeName + '::Player'),
     initialize: function(attributes, options) {
@@ -28,6 +29,7 @@ window.Collections = window.Collections || {};
                                                           bonus : continent.bonus,
                                                           color : continent.color,
                                                           type : continent.type,
+                                                          isStartingContinent : continent.isStartingContinent,
                                                           mapId : attributes.id }
                                                         , { parent : model, territories : continent.territories });
         window.collections.data.continents.add(continentModel);

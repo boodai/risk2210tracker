@@ -116,6 +116,9 @@ window.Views = window.Views || {};
       app._currentGame.save();
       app._currentGame.trigger('newAction');
     },
+    lastAction : function() { var app = this;
+      app._currentGame.years.last().turns.last().actions.last();
+    },
     endTurn : function() { var app = this;
       // check if turns all used up this year
       if(app._currentGame.years.last().turns.last().get('number') == app._currentGame.gamePlayers.length) {
