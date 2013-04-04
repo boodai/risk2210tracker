@@ -13,13 +13,15 @@ window.Views = window.Views || {};
       // Get the collections up and running
       collections.games = new Collections.Games();
       collections.players = new Collections.Players();
-      // load up saved players
-      collections.players.fetch();
 
       // setup current game variable
       app._currentGame = null;
 
       app.importData();
+
+      // load up saved collections
+      collections.games.fetch();
+      collections.players.fetch();
 
       app.homeView();
     },
@@ -177,16 +179,29 @@ window.Views = window.Views || {};
       this.view = new Views.Turn({ model : app._currentGame });
       $('.app').html(this.view.render().el);
     },
-    endGameView : function () {
+    endGameView : function (game) {
       console.info('app::endGameView');
 
       if(this.view != null) {
         this.view.remove();
       }
 
-      this.view = new Views.EndGame({ model : app._currentGame });
+      if(game == undefined) {
+        game = app._currentGame;
+      }
+      this.view = new Views.EndGame({ model : game });
       $('.app').html(this.view.render().el);
-    }
+    },
+    previousGamesView : function () {
+      console.info('app::previousGamesView');
+
+      if(this.view != null) {
+        this.view.remove();
+      }
+
+      this.view = new Views.PreviousGames({ collection : window.collections.games });
+      $('.app').html(this.view.render().el);
+    },
 
 
   }

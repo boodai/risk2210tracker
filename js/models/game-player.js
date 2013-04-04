@@ -22,12 +22,12 @@ window.Collections = window.Collections || {};
 
   Collections.GamePlayers = Backbone.Collection.extend({
     model: window.Models.GamePlayer,
-    localStorage: new Backbone.LocalStorage("Risk::Model::GamePlayer"),
     initialize: function(models, options) {
       options || (options = {});
       if (options.game) {
         // add route to game
         this.game = options.game;
+        this.localStorage = new Backbone.LocalStorage("Risk::Game::" + options.game.id + "::GamePlayer::");
       } else { this.game = null; }
       // setup events
       this.on("add", function(model, collection, options) {

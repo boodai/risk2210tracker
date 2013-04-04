@@ -31,6 +31,13 @@ window.JST = window.JST || {};
         view.$el.html(view._template());
       }
 
+      view.model.gamePlayers.each( function(gamePlayer) {
+        var html = "<p>";
+        html = html + "<strong>Player: </strong>" + gamePlayer.player().get('name') + "<br>";
+        html = html + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Territories: " + gamePlayer.player().get('name') + "<br>";
+        view.$el.append(html);
+      });
+
       return view;
     },
     goHome : function() {

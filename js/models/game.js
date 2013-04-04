@@ -27,8 +27,8 @@ window.Collections = window.Collections || {};
 
       game.setYears(attributes.numYears);
 
-      // lets give it a nice guid id
-      game.set('id', uuid());
+      // lets give it a nice guid id, if it does not have one
+      if(game.id == null) { game.set('id', uuid()); }
       // lets set the date
       game.set('createdAt', new Date());
 
@@ -153,8 +153,6 @@ window.Collections = window.Collections || {};
       // randomize the array
       fisherYates(startingTerritories);
 
-      console.log(startingTerritories.length);
-
       // Territories per player
       var numEach = parseInt(startingTerritories.length/game.gamePlayers.length);
 
@@ -230,7 +228,16 @@ window.Collections = window.Collections || {};
 
   Collections.Games = Backbone.Collection.extend({
     model: window.Models.Game,
-    localStorage: new Backbone.LocalStorage("Risk::Model::Game")
+    localStorage: new Backbone.LocalStorage("Risk::Game"),
+    initialize : function () { var games = this;
+      // add handlers for when syncing to make sure to sync the children
+      games.on('reset', function() {
+        games.each(function(game){
+          game.gamePlayers.fetch();
+          game.years.fetch();
+        });
+      });
+    }
   });
 
 

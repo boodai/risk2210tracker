@@ -119,7 +119,8 @@ window.JST = window.JST || {};
     },
     territoryDoubleClick : function(territory, terrSVG) { var view = this;
       // Clear the territory
-      if( view.game.board[territory.id] != view.game.get('devastatedKey') ) {
+      if( view.game.board[territory.id] != view.game.get('devastatedKey')
+          && view.game.board[territory.id] != null ) {
         // Not a devastated territory
 
         // add action

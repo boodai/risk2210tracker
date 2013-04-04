@@ -45,6 +45,7 @@
   <script type='text/javascript' src='js/views/stats.js'></script>
   <script type='text/javascript' src='js/views/map.js'></script>
   <script type='text/javascript' src='js/views/end-game.js'></script>
+  <script type='text/javascript' src='js/views/previous-games.js'></script>
   <!-- Backbone Views (Partials) -->
   <script type='text/javascript' src='js/views/partials/setup/available-players.js'></script>
   <script type='text/javascript' src='js/views/partials/setup/selected-players.js'></script>
@@ -120,7 +121,8 @@
   <!-- Templates -->
   <script type="text/template" id="start" class="template">
     <h1>Risk Tracker</h1>
-    <button class="btn" data-type="track">Track New Game</button>
+    <button class="btn track">Track New Game</button>
+    <button class="btn previous">Previous Games</button>
 
   </script>
 
@@ -191,6 +193,13 @@
     <h1>Game Finished</h1>
 
     <button class="btn">Done</button>
+
+  </script>
+
+  <script type="text/template" id="previous-games" class="template">
+    <h1>Previous Games</h1>
+
+    <button class="btn back">Back</button>
 
   </script>
 

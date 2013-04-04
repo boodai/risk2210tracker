@@ -10,7 +10,8 @@ window.JST = window.JST || {};
     className: 'bbv-start',
 
     events: {
-      'click .btn' : 'setupGame'
+      'click .btn.track' : 'setupGame',
+      'click .btn.previous' : 'previousGames'
     },
     initialize: function(options) {
       var view = this;
@@ -33,6 +34,11 @@ window.JST = window.JST || {};
       // TODO better way to do this not accessing controller directly
       // TODO find a wy to not call directly into window.app
       window.app.createGame('risk2210');
+    },
+    previousGames : function() {
+      // TODO better way to do this not accessing controller directly
+      // TODO find a wy to not call directly into window.app
+      window.app.previousGamesView();
     }
   });
 

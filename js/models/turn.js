@@ -41,6 +41,12 @@ window.Collections = window.Collections || {};
         model.year = collection.year;
         model.set('yearId', collection.year.get('id'));
       });
+      // add handlers for when syncing to make sure to sync the children
+      this.on('reset', function() {
+        this.each(function(turn){
+          turn.actions.fetch();
+        });
+      });
     },
     comparator : function(turn) {
       return turn.get("number");
