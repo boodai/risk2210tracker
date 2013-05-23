@@ -9,7 +9,8 @@ window.Collections = window.Collections || {};
       'gameTypeId' : null,
       'numYears' : null,
       'initialBoard' : null,
-      'createdAt' : null,
+      'startedAt' : null,
+      'finishedAt' : null,
       'devastatedKey' : 666
     },
     initialize: function(attributes, options) { var game = this;
@@ -30,7 +31,7 @@ window.Collections = window.Collections || {};
       // lets give it a nice guid id, if it does not have one
       if(game.id == null) { game.set('id', uuid()); }
       // lets set the date
-      game.set('createdAt', new Date());
+      game.set('startedAt', new Date());
 
       // load up game players collection if need be
       game.gamePlayers = new Collections.GamePlayers(null, { game:game });
@@ -228,7 +229,7 @@ window.Collections = window.Collections || {};
 
   Collections.Games = Backbone.Collection.extend({
     model: window.Models.Game,
-    localStorage: new Backbone.LocalStorage("Risk::Game"),
+    localStorage: new Backbone.LocalStorage("Risk:Game:"),
     initialize : function () { var games = this;
       // add handlers for when syncing to make sure to sync the children
       games.on('reset', function() {

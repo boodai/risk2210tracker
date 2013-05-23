@@ -87,6 +87,7 @@ window.Views = window.Views || {};
       app._currentGame.save();
     },
     newYear : function() { var app = this;
+      console.info('app::newYear');
       // add a year to the game
       app._currentGame.addYear();
       app._currentGame.save();
@@ -102,6 +103,7 @@ window.Views = window.Views || {};
       app.newTurn();
     },
     newTurn : function() { var app = this;
+      console.info('app::newTurn');
       // add a turn to the year
       app._currentGame.addTurn();
       app._currentGame.save();
@@ -122,12 +124,17 @@ window.Views = window.Views || {};
       app._currentGame.years.last().turns.last().actions.last();
     },
     endTurn : function() { var app = this;
+      console.info('app::endTurn');
+
+      app._currentGame.years.last().turns.last().set('finishedAt', new Date());
+
       // check if turns all used up this year
       if(app._currentGame.years.last().turns.last().get('number') == app._currentGame.gamePlayers.length) {
         if(app._currentGame.years.last().get('number') == app._currentGame.get('numYears')) {
           // end of game
           app.endGame();
         } else {
+          app._currentGame.years.last().set('finishedAt', new Date());
           // needs new year
           app.newYear();
         }
@@ -139,8 +146,22 @@ window.Views = window.Views || {};
     },
     endGame : function() {
       // TODO end game stuff
+      app._currentGame.set('finishedAt', new Date());
       app._currentGame.save();
       app.endGameView();
+    },
+    continueGame : function(game) {
+      app._currentGame = game;
+      // make sure to copy in last game state
+      app._currentGame.board = app._currentGame.years.last().turns.last().actions.last().get('boardState');
+      // in the middle of a turn, or need to do turn order?
+      if(app._currentGame.years.last().turns.length == 0) {
+        // on the turn order screen
+        app.turnOrderView();
+      } else {
+        // in the middle of a turn
+        app.turnView();
+      }
     },
     // TODO move these into a better place...
     homeView : function () {

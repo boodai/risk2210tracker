@@ -12,8 +12,8 @@ window.Collections = window.Collections || {};
     },
     initialize: function(attributes, options) {
       var model = this;
-      // lets give it a nice guid id
-      model.set('id', uuid());
+      // lets give it a nice guid id, if it does not have one
+      if(model.id == null) { model.set('id', uuid()); }
     },
     player : function() { var gamePlayer = this;
       return window.collections.players.get(gamePlayer.get('playerId'));
@@ -27,7 +27,7 @@ window.Collections = window.Collections || {};
       if (options.game) {
         // add route to game
         this.game = options.game;
-        this.localStorage = new Backbone.LocalStorage("Risk::Game::" + options.game.id + "::GamePlayer::");
+        this.localStorage = new Backbone.LocalStorage("Risk:Game:" + options.game.id + ":GamePlayer:");
       } else { this.game = null; }
       // setup events
       this.on("add", function(model, collection, options) {

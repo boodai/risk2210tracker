@@ -14,18 +14,18 @@ window.Collections = window.Collections || {};
     },
     initialize: function(attributes, options) {
       var action = this;
-      // lets give it a nice guid id
-      action.set('id', uuid());
+      // lets give it a nice guid id, if it does not have one
+      if(action.id == null) { action.set('id', uuid()); }
     }
   });
 
   Collections.Actions = Backbone.Collection.extend({
     model: window.Models.Action,
-    localStorage: new Backbone.LocalStorage("Risk::Model::Action"),
     initialize: function(models, options) {
       options || (options = {});
       if (options.turn) {
         this.turn = options.turn;
+        this.localStorage = new Backbone.LocalStorage("Risk:Game:" + options.turn.collection.year.collection.game.id + ":Year:" +  options.turn.collection.year.id + ":Turn:" +  options.turn.id + ":Action:");
       } else { this.turn = null; }
       // setup events
       this.on("add", function(model, collection, options) {

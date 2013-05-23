@@ -11,7 +11,8 @@ window.JST = window.JST || {};
 
     events: {
       'click .btn.back' : 'goHome',
-      'click .btn.view' : 'viewEndGame'
+      'click .btn.view' : 'viewEndGame',
+      'click .btn.continue' : 'continueGame'
     },
     initialize: function(options) {
       var view = this;
@@ -32,12 +33,20 @@ window.JST = window.JST || {};
 
       view.collection.each( function(game) {
         var html = "<p>";
-        html = html + "<strong>Date: </strong>" + game.get('createdAt');
+        html = html + "<strong>Started: </strong>" + game.get('startedAt');
+        html = html + "<strong>Time Played: </strong>";
+        html = html + " <strong>Last Year:</strong>: </strong>" + game.years.last().get('number');
+        html = html + " <strong>Last Turn:</strong>: </strong>" + game.years.last().turns.last().get('number');
         html = html + " <strong>Players: </strong>";
         game.gamePlayers.each(function(gp) {
           html = html + gp.player().get('name') + ", ";
         });
-        html = html + "</p> <button class='btn view' data-game-id='" + game.id + "'>view end game</button>";
+
+        if(game.get('finishedAt') != null) {
+          html = html + "</p> <button class='btn view' data-game-id='" + game.id + "'>view end game</button>";
+        } else {
+          html = html + "</p> <button class='btn continue' data-game-id='" + game.id + "'>continue game</button>";
+        }
         view.$el.append(html);
       });
 
@@ -50,6 +59,11 @@ window.JST = window.JST || {};
       var gameId = e.currentTarget.dataset['gameId'];
       var game = window.collections.games.get(gameId);
       window.app.endGameView(game);
+    },
+    continueGame : function(e) {
+      var gameId = e.currentTarget.dataset['gameId'];
+      var game = window.collections.games.get(gameId);
+      window.app.continueGame(game);
     }
   });
 

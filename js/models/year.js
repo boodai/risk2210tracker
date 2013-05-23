@@ -8,15 +8,20 @@ window.Collections = window.Collections || {};
       'id' : null,
       'gameId' : null,
       'number' : null,
-      'playerOrder' : []
+      'playerOrder' : [],
+      'startedAt' : null,
+      'finishedAt' : null
     },
     initialize: function(attributes, options) {
       var year = this;
-      // lets give it a nice guid id
-      year.set('id', uuid());
+      // lets give it a nice guid id, if it does not have one
+      if(year.id == null) { year.set('id', uuid()); }
 
       // create turns collection
       year.turns = new Collections.Turns(null, { year:year });
+
+      // lets set the date
+      year.set('startedAt', new Date());
 
       // make sure on save, that we save all children
       year.on('sync', function(){
@@ -31,7 +36,7 @@ window.Collections = window.Collections || {};
       options || (options = {});
       if (options.game) {
         this.game = options.game;
-        this.localStorage = new Backbone.LocalStorage("Risk::Game::" + options.game.id + "::Year::");
+        this.localStorage = new Backbone.LocalStorage("Risk:Game:" + options.game.id + ":Year:");
       } else { this.game = null; }
       // setup events
       this.on("add", function(model, collection, options) {
