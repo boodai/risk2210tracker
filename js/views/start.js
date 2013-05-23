@@ -11,7 +11,8 @@ window.JST = window.JST || {};
 
     events: {
       'click .btn.track' : 'setupGame',
-      'click .btn.previous' : 'previousGames'
+      'click .btn.previous' : 'previousGames',
+      'click .btn.clear' : 'clearLocalStorage'
     },
     initialize: function(options) {
       var view = this;
@@ -39,6 +40,9 @@ window.JST = window.JST || {};
       // TODO better way to do this not accessing controller directly
       // TODO find a wy to not call directly into window.app
       window.app.previousGamesView();
+    },
+    clearLocalStorage : function() {
+      window.localStorage.clear();
     }
   });
 
