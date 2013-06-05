@@ -210,7 +210,7 @@ window.Views = window.Views || {};
       if(game == undefined) {
         game = app._currentGame;
       }
-      this.view = new Views.EndGame({ model : game });
+      this.view = new Views.EndGame.Overview({ model : game });
       $('.app').html(this.view.render().el);
     },
     previousGamesView : function () {

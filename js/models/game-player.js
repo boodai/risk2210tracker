@@ -8,7 +8,8 @@ window.Collections = window.Collections || {};
       'id' : null,
       'gameId' : null,
       'playerId' : null,
-      'color' : null
+      'color' : null,
+      'colonialInfluence' : 0
     },
     initialize: function(attributes, options) {
       var model = this;
@@ -17,6 +18,16 @@ window.Collections = window.Collections || {};
     },
     player : function() { var gamePlayer = this;
       return window.collections.players.get(gamePlayer.get('playerId'));
+    },
+    addInfluence : function() { var gamePlayer = this;
+      gamePlayer.set('colonialInfluence', gamePlayer.get('colonialInfluence') + 3 );
+      gamePlayer.save();
+    },
+    removeInfluence : function() { var gamePlayer = this;
+      if(gamePlayer.get('colonialInfluence') >= 3 ) {
+        gamePlayer.set('colonialInfluence', gamePlayer.get('colonialInfluence') - 3 );
+        gamePlayer.save();
+      }
     }
   });
 

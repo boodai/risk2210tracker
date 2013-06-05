@@ -44,7 +44,8 @@
   <script type='text/javascript' src='js/views/turn.js'></script>
   <script type='text/javascript' src='js/views/stats.js'></script>
   <script type='text/javascript' src='js/views/map.js'></script>
-  <script type='text/javascript' src='js/views/end-game.js'></script>
+  <script type='text/javascript' src='js/views/end-game/overview.js'></script>
+  <script type='text/javascript' src='js/views/end-game/player.js'></script>
   <script type='text/javascript' src='js/views/previous-games.js'></script>
   <!-- Backbone Views (Partials) -->
   <script type='text/javascript' src='js/views/partials/setup/available-players.js'></script>
@@ -190,11 +191,21 @@
     </div>
   </script>
 
-  <script type="text/template" id="end-game" class="template">
+  <script type="text/template" id="end-game-overview" class="template">
     <h1>Game Finished</h1>
 
     <button class="btn">Done</button>
+    <p></p>
+  </script>
 
+  <script type="text/template" id="end-game-player" class="template">
+    <strong>Player: </strong><@= player @><br>
+    Continents Owned: <@= continentNames @><br>
+    Number Territories: <@= territories @><br>
+    Continent Bonus: <@= continentBonuses @><br>
+    Colonial Influence: <@= colonialInfluence @> <button class="btn add">Add</button> <button class="btn remove">Remove</button><br>
+    Total: <@= total @><br>
+    <hr>
   </script>
 
   <script type="text/template" id="previous-games" class="template">
