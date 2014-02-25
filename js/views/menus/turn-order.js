@@ -7,7 +7,7 @@ window.JST = window.JST || {};
 
   Views.TurnOrder = Backbone.View.extend({
     tagName: 'div',
-    className: 'bbv-turn-order',
+    className: 'bbv-turn-order menu',
 
     events: {
       'click .btn' : 'startTurn'

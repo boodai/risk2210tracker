@@ -32,11 +32,16 @@ window.JST = window.JST || {};
       }
 
       view.collection.each( function(game) {
+        var lastTurn = 0;
+        if(game.years.last().turns.length > 0) {
+          lastTurn = game.years.last().turns.last().get('number');
+        }
+
         var html = "<p>";
         html = html + "<strong>Started: </strong>" + game.get('startedAt');
         html = html + "<strong>Time Played: </strong>";
         html = html + " <strong>Last Year:</strong>: </strong>" + game.years.last().get('number');
-        html = html + " <strong>Last Turn:</strong>: </strong>" + game.years.last().turns.last().get('number');
+        html = html + " <strong>Last Turn:</strong>: </strong>" + lastTurn;
         html = html + " <strong>Players: </strong>";
         game.gamePlayers.each(function(gp) {
           html = html + gp.player().get('name') + ", ";

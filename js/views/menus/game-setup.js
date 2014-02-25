@@ -7,7 +7,7 @@ window.JST = window.JST || {};
 
   Views.GameSetup = Backbone.View.extend({
     tagName: 'div',
-    className: 'bbv-game-setup',
+    className: 'bbv-game-setup menu',
 
     events: {
       'click .btn.start-game' : 'startGame',
