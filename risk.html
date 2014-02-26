@@ -38,15 +38,15 @@
   <script type='text/javascript' src='js/models/data/territory.js'></script>
 
   <!-- Backbone Views -->
-  <script type='text/javascript' src='js/views/start.js'></script>
-  <script type='text/javascript' src='js/views/game-setup.js'></script>
-  <script type='text/javascript' src='js/views/turn-order.js'></script>
+  <script type='text/javascript' src='js/views/menus/start.js'></script>
+  <script type='text/javascript' src='js/views/menus/game-setup.js'></script>
+  <script type='text/javascript' src='js/views/menus/turn-order.js'></script>
   <script type='text/javascript' src='js/views/turn.js'></script>
   <script type='text/javascript' src='js/views/stats.js'></script>
   <script type='text/javascript' src='js/views/map.js'></script>
   <script type='text/javascript' src='js/views/end-game/overview.js'></script>
   <script type='text/javascript' src='js/views/end-game/player.js'></script>
-  <script type='text/javascript' src='js/views/previous-games.js'></script>
+  <script type='text/javascript' src='js/views/menus/previous-games.js'></script>
   <!-- Backbone Views (Partials) -->
   <script type='text/javascript' src='js/views/partials/setup/available-players.js'></script>
   <script type='text/javascript' src='js/views/partials/setup/selected-players.js'></script>
@@ -57,12 +57,48 @@
 
   <!-- Style Sheet -->
   <style>
+    body {
+      background: #7a7672;
+    }
     .app {
       border: 1px solid black;
       width: 1024px;
       height: 768px;
         overflow: hidden;
     }
+    .app h1 {
+      color: #a53833;
+      font-size: 5rem;
+      text-align: center;
+      text-shadow: 0 0 0.6rem #ffffff;
+      margin-bottom: 0px;
+    }
+    .app h2 {
+      color: #000000;
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 0px;
+    }
+
+    .app .menu {
+      border: 2px solid black;
+      width: 650px;
+      height: 480px;
+      float: left;
+      margin-left: 187px;
+      padding: 30px;
+      box-sizing: border-box;
+    }
+    .bbv-start {
+      text-align: center;
+    }
+    .bbv-start .btn {
+      width: 30rem;
+      height: 7rem;
+      border-radius: 2rem;
+      margin: 0.4rem;
+    }
+
     .bbv-map {
         overflow: hidden;
         height: 768px;
@@ -88,6 +124,12 @@
       border: 1px solid blue;
       -webkit-transform: scale(0.5);
       -webkit-transform-origin: 0 0;
+    }
+    .bbv-turn {
+      position:absolute;
+      float:left;
+      top:0;
+      left:0;
     }
     .bbv-turn > .controls {
       position: absolute;
@@ -117,19 +159,20 @@
 </head>
 
 <body>
-  <div class="app"></div>
+  <div class="app">
+    <h1>RISK</h1>
+    <h2>2210 A.D.</h2>
+  </div>
 
   <!-- Templates -->
   <script type="text/template" id="start" class="template">
-    <h1>Risk Tracker</h1>
-    <button class="btn track">Track New Game</button>
-    <button class="btn previous">Previous Games</button>
+    <button class="btn track">Track New Game</button><br>
+    <button class="btn previous">Previous Games</button><br>
     <button class="btn clear">clear localstorage</button>
 
   </script>
 
   <script type="text/template" id="game-setup" class="template">
-    <h1><@= name @></h1>
     years :
     <select size="1" id="years">
       <@ for(var x = years.min; x < years.max; x++) { @> <option value="<@= x @>" <@ if(x == years.default) { print('selected="selected"') } @>><@= x @></option> <@ }; @>
@@ -149,7 +192,6 @@
   </script>
 
   <script type="text/template" id="turn-order" class="template">
-    <h1><@= name @></h1>
     <h3>Turn Order</h3>
     year <@= year @>
     <br>

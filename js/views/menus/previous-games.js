@@ -4,10 +4,11 @@ window.Views = window.Views || {};
 window.JST = window.JST || {};
 
 (function(Backbone, Models, Collections, Views){
+  Views.Menus = Views.Menus || {};
 
-  Views.PreviousGames = Backbone.View.extend({
+  Views.Menus.PreviousGames = Backbone.View.extend({
     tagName: 'div',
-    className: 'bbv-previous-games',
+    className: 'bbv-previous-games menu',
 
     events: {
       'click .btn.back' : 'goHome',

@@ -4,10 +4,11 @@ window.Views = window.Views || {};
 window.JST = window.JST || {};
 
 (function(Backbone, Models, Collections, Views){
+  Views.Menus = Views.Menus || {};
 
-  Views.Start = Backbone.View.extend({
+  Views.Menus.Start = Backbone.View.extend({
     tagName: 'div',
-    className: 'bbv-start',
+    className: 'bbv-start menu',
 
     events: {
       'click .btn.track' : 'setupGame',

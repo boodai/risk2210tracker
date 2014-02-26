@@ -4,8 +4,9 @@ window.Views = window.Views || {};
 window.JST = window.JST || {};
 
 (function(Backbone, Models, Collections, Views){
+  Views.Menus = Views.Menus || {};
 
-  Views.GameSetup = Backbone.View.extend({
+  Views.Menus.GameSetup = Backbone.View.extend({
     tagName: 'div',
     className: 'bbv-game-setup menu',
 
@@ -32,7 +33,6 @@ window.JST = window.JST || {};
       });
 
       var data = {
-        name : view.model.gameType.get('name'),
         years :  view.model.gameType.get('years'),
         players : players
       };

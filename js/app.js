@@ -167,8 +167,8 @@ window.Views = window.Views || {};
     homeView : function () {
       console.info('app::homeView');
 
-      this.view = new Views.Start();
-      $('.app').html(this.view.render().el);
+      this.view = new Views.Menus.Start();
+      $('.app').append(this.view.render().el);
     },
     gameSetupView : function () {
       console.info('app::gameSetupView');
@@ -177,8 +177,8 @@ window.Views = window.Views || {};
         this.view.remove();
       }
 
-      this.view = new Views.GameSetup({ model : app._currentGame });
-      $('.app').html(this.view.render().el);
+      this.view = new Views.Menus.GameSetup({ model : app._currentGame });
+      $('.app').append(this.view.render().el);
     },
     turnOrderView : function () {
       console.info('app::turnOrderView');
@@ -187,8 +187,8 @@ window.Views = window.Views || {};
         this.view.remove();
       }
 
-      this.view = new Views.TurnOrder({ model : app._currentGame });
-      $('.app').html(this.view.render().el);
+      this.view = new Views.Menus.TurnOrder({ model : app._currentGame });
+      $('.app').append(this.view.render().el);
     },
     turnView : function () {
       console.info('app::turnView');
@@ -198,7 +198,7 @@ window.Views = window.Views || {};
       }
 
       this.view = new Views.Turn({ model : app._currentGame });
-      $('.app').html(this.view.render().el);
+      $('.app').append(this.view.render().el);
     },
     endGameView : function (game) {
       console.info('app::endGameView');
@@ -211,7 +211,7 @@ window.Views = window.Views || {};
         game = app._currentGame;
       }
       this.view = new Views.EndGame.Overview({ model : game });
-      $('.app').html(this.view.render().el);
+      $('.app').append(this.view.render().el);
     },
     previousGamesView : function () {
       console.info('app::previousGamesView');
@@ -220,8 +220,8 @@ window.Views = window.Views || {};
         this.view.remove();
       }
 
-      this.view = new Views.PreviousGames({ collection : window.collections.games });
-      $('.app').html(this.view.render().el);
+      this.view = new Views.Menus.PreviousGames({ collection : window.collections.games });
+      $('.app').append(this.view.render().el);
     },
 
 

@@ -4,8 +4,9 @@ window.Views = window.Views || {};
 window.JST = window.JST || {};
 
 (function(Backbone, Models, Collections, Views){
+  Views.Menus = Views.Menus || {};
 
-  Views.TurnOrder = Backbone.View.extend({
+  Views.Menus.TurnOrder = Backbone.View.extend({
     tagName: 'div',
     className: 'bbv-turn-order menu',
 
@@ -21,7 +22,6 @@ window.JST = window.JST || {};
     render: function() { var view = this;
 
       var data = {
-        name : view.model.gameType.get('name'),
         year : view.model.years.last().get('number'),
         players : {}
       };
